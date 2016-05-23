@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Леонид Мистюков](https://up.htmlacademy.ru/adaptive/7/user/107653).
-* Наставник: `Неизвестно`.
+* Наставник: [Любимая Жена](https://vk.com/molkseniya).
 
 ---
 
