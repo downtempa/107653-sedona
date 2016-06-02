@@ -1,126 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="utf-8">
     <title>Седона: Ваш отзыв</title>
 </head>
+
 <body>
     <header class="main-header">
-            <div class="main-header__logo logo">
-            </div>
-            <nav class="main-nav">
-                <a class="main-nav__toggle" href="#">
-                    Toggle
-                </a>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a href="index.html">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="photo.html">
-                            Фото и Видио
-                        </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a>
-                            Форма отзыва
-                        </a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="https://htmlacademy.ru">
-                            HTML Academy
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <a class="main-header__toggle" href="#">
-                Toggle
-            </a>
-        </header>
-        <section class="review">
-            <h1 class="review__title">Оставьте свой отзыв</h1>
-            <p class="review__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-            <form action="post" class="review__form form">
-                <fieldset class="full-name">
-                    <legend>Представтесь, пожалуйста:</legend>
-                    <label class="full-name__label" for="user-name">Имя:</label>
-                    <input class="full-name__input" type="text" id="user-name" placeholder="Петр">
-                    <label class="full-name__label" for="user-surname">Фамилия:</label>
-                    <input class="full-name__input" type="text" id="user-surname" placeholder="Иванов">
-                    <label class="full-name__label" for="user-patronymic">Отчество:</label>
-                    <input class="full-name__input" type="text" id="user-patronymic" placeholder="Александрович">
-                </fieldset>
-
-                <fieldset class="user-contacts">
-                    <legend class="user-contacts__legend">Контактная информация:</legend>
-                    <label class="user-contacts__label" for="user-tel">Контактный телефон:</label>
-                    <input class="user-contacts__input" type="tel" id="user-tel" placeholder="Введите телефон">
-                    <label class="user-contacts__label" for="user-mail">Электронная почта:</label>
-                    <input class="user-contacts__input" type="tel" id="user-tel" placeholder="Введите e-mail">
-                </fieldset>
-
-                <fieldset class="user-exp">
-                    <legend class="user-exp__legend">Ваше общее впечатление:</legend>
-                    <label for="positive-exp" class="user-exp__label">
-                        <input type="radio" class="user-exp__radio" id="positive-exp" name="user-exp">Скорее положительное
-                    </label>
-                    <label for="negative-exp" class="user-exp__label">
-                        <input type="radio" class="user-exp__radio" id="negative-exp" name="user-exp">Скорее отрицательное
-                    </label>
-                    <label for="no-comments" class="user-exp__label">
-                        <input type="radio" class="user-exp__radio" id="no-comments" name="user-exp">Затрудняюсь ответить
-                    </label>
-                </fieldset>
-
-                <fieldset class="attractions">
-                    <legend class="attractions__legend">Посещенные достопримечательности:</legend>
-                    <label for="diablo" class="attractions__label">
-                        <input type="checkbox" class="attractions__radio" id="diablo">Мост Дьявола
-                    </label>
-                    <label for="park" class="attractions__label">
-                        <input type="checkbox" class="attractions__radio" id="park">Слайд-парк
-                    </label>
-                    <label for="mountain" class="attractions__label">
-                        <input type="checkbox" class="attractions__radio" id="mountain">Гора-колокол
-                    </label>
-                    <label for="rock" class="attractions__label">
-                        <input type="checkbox" class="attractions__radio" id="rock">Красные скалы
-                    </label>
-                </fieldset>
-
-                <fieldset class="user-emotions">
-                    <legend class="user-emotiond__legend">
-                        Опишите свои эмоции:
-                    </legend>
-                    <textarea class="user-emotions__textarea" name="user-emotions" id="user-emotions" cols="20" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-                </fieldset>
-                <input class="form__btn btn" type="submit" value="Отправить отзыв">
-            </form>
-        </section>
-        <footer class="main-footer">
-            <a class="footer__logo" href="index.html">
-                #Visitedsedona
-            </a>
-            <div class="footer__social social">
-                <a class="social__item social__item--tw" href="#">
-                    Twitter
-                </a>
-                <a class="social__item social__item--fb" href="#">
-                    Facebook
-                </a>
-                <a class="social__item social__item--youtube" href="#">
-                    Youtube
-                </a>
-            </div>
-            <div class="footer__copyright copyright">
-                <span>
-                    Разработано
-                </span>
-                <a class="copyright__img" href="https://htmlacademy.ru">
-                    HTML academy
-                </a>
-            </div>
-        </footer>
+        <div class="main-header__logo  logo"></div>
+        <nav class="main-nav">
+            <a class="main-nav__toggle" href="#">Toggle</a>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="photo.html">Фото и Видио</a>
+                </li>
+                <li class="main-nav__item">
+                    <a>Форма отзыва</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="https://htmlacademy.ru">HTML Academy</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="main-header__toggle" href="#">Toggle</a>
+    </header>
+    <section class="review">
+        <h1 class="review__title">Оставьте свой отзыв</h1>
+        <p class="review__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form action="post" class="review__form  form">
+            <fieldset class="full-name">
+                <legend>Представтесь, пожалуйста:</legend>
+                <label class="full-name__label" for="user-name">Имя:</label>
+                <input class="full-name__input" type="text" id="user-name" placeholder="Петр">
+                <label class="full-name__label" for="user-surname">Фамилия:</label>
+                <input class="full-name__input" type="text" id="user-surname" placeholder="Иванов">
+                <label class="full-name__label" for="user-patronymic">Отчество:</label>
+                <input class="full-name__input" type="text" id="user-patronymic" placeholder="Александрович">
+            </fieldset>
+            <fieldset class="user-contacts">
+                <legend class="user-contacts__legend">Контактная информация:</legend>
+                <label class="user-contacts__label" for="user-tel">Контактный телефон:</label>
+                <input class="user-contacts__input" type="tel" id="user-tel" placeholder="Введите телефон">
+                <label class="user-contacts__label" for="user-mail">Электронная почта:</label>
+                <input class="user-contacts__input" type="tel" id="user-mail" placeholder="Введите e-mail">
+            </fieldset>
+            <fieldset class="user-exp">
+                <legend class="user-exp__legend">Ваше общее впечатление:</legend>
+                <label for="positive-exp" class="user-exp__label">
+                    <input type="radio" class="user-exp__radio" id="positive-exp" name="user-exp">Скорее положительное
+                </label>
+                <label for="negative-exp" class="user-exp__label">
+                    <input type="radio" class="user-exp__radio" id="negative-exp" name="user-exp">Скорее отрицательное
+                </label>
+                <label for="no-comments" class="user-exp__label">
+                    <input type="radio" class="user-exp__radio" id="no-comments" name="user-exp">Затрудняюсь ответить
+                </label>
+            </fieldset>
+            <fieldset class="attractions">
+                <legend class="attractions__legend">Посещенные достопримечательности:</legend>
+                <label for="diablo" class="attractions__label">
+                    <input type="checkbox" class="attractions__radio" id="diablo">Мост Дьявола
+                </label>
+                <label for="park" class="attractions__label">
+                    <input type="checkbox" class="attractions__radio" id="park">Слайд-парк
+                </label>
+                <label for="mountain" class="attractions__label">
+                    <input type="checkbox" class="attractions__radio" id="mountain">Гора-колокол
+                </label>
+                <label for="rock" class="attractions__label">
+                    <input type="checkbox" class="attractions__radio" id="rock">Красные скалы
+                </label>
+            </fieldset>
+            <fieldset class="user-emotions">
+                <legend class="user-emotiond__legend">
+                    Опишите свои эмоции:
+                </legend>
+                <textarea class="user-emotions__textarea" name="user-emotions" id="user-emotions" cols="20" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            </fieldset>
+            <input class="form__btn  btn" type="submit" value="Отправить отзыв">
+        </form>
+    </section>
+    <footer class="main-footer">
+        <a class="footer__logo" href="index.html">#Visitedsedona</a>
+        <div class="footer__social  social">
+            <a class="social__item  social__item--tw" href="#">Twitter</a>
+            <a class="social__item  social__item--fb" href="#">Facebook</a>
+            <a class="social__item  social__item--youtube" href="#">Youtube</a>
+        </div>
+        <div class="footer__copyright  copyright">
+            <span>Разработано</span>
+            <a class="copyright__img" href="https://htmlacademy.ru">HTML academy</a>
+        </div>
+    </footer>
 </body>
+
 </html>
