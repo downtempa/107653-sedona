@@ -1,0 +1,39 @@
+// service
+@import "variables";
+@import "mixins";
+// global
+@import "global/fonts";
+// basic
+@import "blocks/btn";
+// 1
+@import "blocks/main-header";
+@import "blocks/main-footer";
+@import "blocks/main-nav";
+// 1.2
+  @import "blocks/logo";
+  @import "blocks/promo";
+  @import "blocks/map";
+  @import "blocks/social";
+  @import "blocks/copyright";
+
+  @import "blocks/photo";
+  @import "blocks/video";
+
+  @import "blocks/review";
+// 2
+    @import "blocks/benefit";
+
+    @import "blocks/post";
+    @import "blocks/player";
+
+    @import "blocks/form";
+// 3
+    @import "blocks/advice";
+    @import "blocks/booking";
+
+    @import "blocks/full-name";
+    @import "blocks/user-contacts";
+    @import "blocks/user-exp";
+    @import "blocks/main-header";
+    @import "blocks/attractions";
+    @import "blocks/user-emotions";
