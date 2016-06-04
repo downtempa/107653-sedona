@@ -4,36 +4,36 @@
 // global
 @import "global/fonts";
 // basic
-@import "btn";
+@import "blocks/btn";
 // 1
-@import "main-header";
-@import "main-footer";
-@import "main-nav";
+@import "blocks/main-header";
+@import "blocks/main-footer";
+@import "blocks/main-nav";
 // 1.2
-  @import "logo";
-  @import "promo";
-  @import "map";
-  @import "social";
-  @import "copyright";
+  @import "blocks/logo";
+  @import "blocks/promo";
+  @import "blocks/map";
+  @import "blocks/social";
+  @import "blocks/copyright";
 
-  @import "photo";
-  @import "video";
+  @import "blocks/photo";
+  @import "blocks/video";
 
-  @import "review";
+  @import "blocks/review";
 // 2
-    @import "benefit";
+    @import "blocks/benefit";
 
-    @import "post";
-    @import "player";
+    @import "blocks/post";
+    @import "blocks/player";
 
-    @import "form";
+    @import "blocks/form";
 // 3
-    @import "advice";
-    @import "booking";
+    @import "blocks/advice";
+    @import "blocks/booking";
 
-    @import "full-name";
-    @import "user-contacts";
-    @import "user-exp";
-    @import "main-header";
-    @import "attractions";
-    @import "user-emotions";
+    @import "blocks/full-name";
+    @import "blocks/user-contacts";
+    @import "blocks/user-exp";
+    @import "blocks/main-header";
+    @import "blocks/attractions";
+    @import "blocks/user-emotions";
