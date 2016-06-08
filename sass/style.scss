@@ -1,4 +1,6 @@
 // service
+@import "../node_modules/normalize.css/normalize.css";
+
 @import "variables";
 @import "mixins";
 // global
@@ -34,6 +36,5 @@
     @import "blocks/full-name";
     @import "blocks/user-contacts";
     @import "blocks/user-exp";
-    @import "blocks/main-header";
     @import "blocks/attractions";
     @import "blocks/user-emotions";

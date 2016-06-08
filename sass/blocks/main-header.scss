@@ -1,0 +1,55 @@
+.main-header {
+  padding-bottom: 410px;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center 163px;
+  background-size: cover;
+    @media ($tablet-widths) {
+      background-position: center bottom;
+    }
+  &:after {
+    display: block;
+    position: absolute;
+    content: "";
+
+  }
+
+  // белая псевдо-панелька
+  &__top-panel {
+    background-color: white;
+    min-height: 58px;
+    position: relative;
+    box-shadow: 0 -3px 5px 0px rgba(0, 0, 0, 0.2);
+  //   padding-bottom: 410px;
+  //   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center 163px;
+  // background-size: cover;
+    @media ($tablet-widths) {
+      box-shadow: none;
+    }
+  }
+
+  // переключатель гамбургер
+  &__toggle {
+    position: absolute;
+    top: 16px;
+    right: 3%;
+    display: block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    outline: none;
+    background: url("../../img/icon-menu.svg") no-repeat center center;
+    @media ($tablet-widths) {
+      display: none;
+    }
+
+  // логотип
+  }
+  &__logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 1000;
+
+  }
+}
