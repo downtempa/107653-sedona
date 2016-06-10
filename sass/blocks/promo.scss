@@ -23,4 +23,19 @@
     text-transform: uppercase;
     text-align: center;
   }
+  &__benefit-row {
+    background-color: #eee;
+    @media ($tablet-widths) {
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__search {
+    width: 280px;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+      width: 728px;
+    }
+  }
 }

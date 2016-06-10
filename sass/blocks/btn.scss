@@ -1,0 +1,24 @@
+.btn {
+  width: 280px;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  outline: none;
+  font-family: $main-font;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  background-color: $blue-sky;
+  box-sizing: border-box;
+  &--search {
+    width: 280px;
+    @media ($tablet-widths) {
+      width: 460px;
+    }
+  }
+}
