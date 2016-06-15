@@ -1,5 +1,65 @@
-body {
-  font-family: $main-font;
-  font-size: 20px;
-  color: red;
+.advice {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  background-color: white;
+  @media ($tablet-widths) {
+    width: 100%;
+    display: flex;
+  }
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+      display: flex;
+      margin: 0 auto;
+      width: 728px;
+    }
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      margin-left: 0;
+    }
+  }
+  &__description {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    margin-left: 50px;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 21px;
+    color: $dark-grey;
+    font-weight: 400;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      margin-left: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2px;
+    padding-right: 20px;
+    @media ($tablet-widths) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__picture {
+    width: 40px;
+  }
 }

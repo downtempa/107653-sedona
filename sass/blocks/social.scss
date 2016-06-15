@@ -1,0 +1,11 @@
+.social {
+  &__item {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: $blue-sky;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+  }
+}

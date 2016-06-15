@@ -1,10 +1,18 @@
 // service
+@import "../node_modules/normalize.css/normalize.css";
+
 @import "variables";
 @import "mixins";
+@import "global/scafolding";
 // global
 @import "global/fonts";
 // basic
+@import "blocks/page";
 @import "blocks/btn";
+@import "blocks/range";
+@import "blocks/legend";
+@import "blocks/label";
+@import "blocks/fieldset";
 // 1
 @import "blocks/main-header";
 @import "blocks/main-footer";
@@ -21,6 +29,7 @@
 
   @import "blocks/review";
 // 2
+    @import "blocks/intro";
     @import "blocks/benefit";
 
     @import "blocks/post";
@@ -34,6 +43,5 @@
     @import "blocks/full-name";
     @import "blocks/user-contacts";
     @import "blocks/user-exp";
-    @import "blocks/main-header";
     @import "blocks/attractions";
     @import "blocks/user-emotions";

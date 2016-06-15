@@ -1,0 +1,13 @@
+.full-name {
+  &__input-container {
+    display: flex;
+
+  }
+  &__label {
+    // margin-right: 20px;
+  }
+  &__input {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+}

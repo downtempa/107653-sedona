@@ -1,0 +1,117 @@
+.benefit {
+  background-color: $blue-sky;
+  &--full {
+    @media ($tablet-widths) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &--short {
+    width: 280px;
+    margin: 0 auto;
+    background-color: transparent;
+    text-align: center;
+    @media ($tablet-widths) {
+      width: 33.33%;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    @media ($tablet-widths) {
+      width: 33.33%;
+      margin: 0;
+      padding-right: 20px;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+  }
+  &__title {
+    // padding-right: 8%;
+    // padding-left: 8%;
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    // text-align: center;
+    &--short {
+      margin-top: 0;
+      color: black;
+    }
+  }
+  &__description {
+    // padding-right: 8%;
+    // padding-left: 8%;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    // text-align: center;
+    &--short {
+      color: $dark-grey;
+    }
+  }
+  &__number {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: $blue-sky;
+    &--short {
+      color: $dark-grey;
+      background-color: #eee;
+    }
+  }
+  &__number-wrapper {
+    position: relative;
+    z-index: 1;
+    &:before {
+      position: absolute;
+      margin: 0 auto;
+      // top: 50%;
+      // left: 50%;
+      // margin-left: -25px;
+      display: block;
+      content: "";
+      width: 100%;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 20%;
+      z-index: -1;
+      border-top: 2px solid white;
+    }
+    &--short:before {
+      border-top: 2px solid #979797;
+      width: 14%;
+    }
+  }
+  &__picture {
+    @media ($tablet-widths) {
+      width: 66.66%;
+    }
+    &--order_reverse {
+      @media ($tablet-widths) {
+        order: -1;
+      }
+
+    }
+  }
+  &__picture img {
+    vertical-align: bottom;
+  }
+}
