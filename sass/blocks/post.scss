@@ -1,0 +1,25 @@
+.post {
+  @media ($tablet-widths) {
+    width: 50%;
+  }
+  &--panorama {
+    @media ($tablet-widths) {
+      width: 100%;
+    }
+  }
+  &__title {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+  }
+  &__author {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $dark-grey;
+  }
+}

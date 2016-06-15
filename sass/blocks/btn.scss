@@ -21,4 +21,14 @@
       width: 460px;
     }
   }
+  &--like {
+    width: 23px;
+    height: 21px;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    background: url("../../img/icon-like.svg") no-repeat center center;
+  }
 }

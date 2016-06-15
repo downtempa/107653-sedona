@@ -9,7 +9,9 @@
         padding-bottom: 8px;
         background-color: white;
       }
-
+      @media ($desktop-widths) {
+        max-width: 1200px;
+      }
       &__list {
         list-style: none;
         margin: 0;

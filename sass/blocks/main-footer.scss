@@ -1,0 +1,15 @@
+.main-footer {
+  text-align: center;
+  @media ($tablet-widths) {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__logo {
+    font-family: $main-font;
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}

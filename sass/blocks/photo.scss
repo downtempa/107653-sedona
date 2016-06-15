@@ -1,0 +1,12 @@
+.photo {
+  width: 280px;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+  @media ($desktop-widths) {
+    width: 100%;
+  }
+}

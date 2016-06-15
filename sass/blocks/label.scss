@@ -1,0 +1,12 @@
+.label {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $dark-grey;
+  text-transform: uppercase;
+  &--check {
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+}

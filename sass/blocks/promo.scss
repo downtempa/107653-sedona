@@ -1,28 +1,5 @@
 .promo {
-  &__title {
-    max-width: 445px;
-    margin: 0 auto;
-    padding-right: 8%;
-    padding-left: 8%;
-    font-family: $main-font;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 900;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  &__description {
-    padding-right: 8%;
-    padding-left: 8%;
-    font-family: $main-font;
-    font-size: 14px;
-    line-height: 26px;
-    color: $dark-grey;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-  }
+
   &__benefit-row {
     background-color: #eee;
     @media ($tablet-widths) {

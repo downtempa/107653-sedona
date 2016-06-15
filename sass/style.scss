@@ -7,7 +7,12 @@
 // global
 @import "global/fonts";
 // basic
+@import "blocks/page";
 @import "blocks/btn";
+@import "blocks/range";
+@import "blocks/legend";
+@import "blocks/label";
+@import "blocks/fieldset";
 // 1
 @import "blocks/main-header";
 @import "blocks/main-footer";
@@ -24,6 +29,7 @@
 
   @import "blocks/review";
 // 2
+    @import "blocks/intro";
     @import "blocks/benefit";
 
     @import "blocks/post";
