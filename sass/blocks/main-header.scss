@@ -1,31 +1,50 @@
 .main-header {
-  padding-bottom: 410px;
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center 163px;
-  background-size: cover;
-    @media ($tablet-widths) {
-      background-position: center bottom;
-    }
-  &:after {
-    display: block;
-    position: absolute;
-    content: "";
-
+  position: relative;
+  padding-bottom: 373px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+  background-size: 738px auto;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
+    background-size: 738px auto;
   }
-
+  @media ($tablet-widths) {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
+  background-size: 1200px auto;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom;
+    background-size: 1200px auto;
+  }
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 29px;
+    bottom: 0;
+    width: 100%;
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+    background-size: 100% auto;
+    @media ($tablet-widths) {
+      height: 57px;
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+    }
+    @media ($desktop-widths) {
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+    }
+  }
   // белая псевдо-панелька
   &__top-panel {
     background-color: white;
     min-height: 58px;
     position: relative;
     box-shadow: 0 -3px 5px 0px rgba(0, 0, 0, 0.2);
-  //   padding-bottom: 410px;
-  //   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center 163px;
-  // background-size: cover;
+    //   padding-bottom: 410px;
+    //   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center 163px;
+    // background-size: cover;
     @media ($tablet-widths) {
       box-shadow: none;
     }
   }
-
   // переключатель гамбургер
   &__toggle {
     position: absolute;
@@ -42,14 +61,26 @@
     @media ($tablet-widths) {
       display: none;
     }
-
-  // логотип
+    // логотип
   }
   &__logo {
     position: absolute;
-    left: 50%;
-    margin-left: -50px;
+    left: 0;
+    right: 0;
+    width: 101.67px;
+    margin: auto;
     z-index: 1000;
+    @media ($desktop-widths) {
+      width: 186.64px;
+    }
+  }
+  &__sedona-text-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    width: 280px;
+    margin: auto;
 
   }
 }

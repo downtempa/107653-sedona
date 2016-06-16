@@ -1,5 +1,11 @@
 .promo {
-
+  // &::before {
+  //   position: absolute;
+  //   display: block;
+  //   content: "";
+  //   width: 100%;
+  //   background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+  // }
   &__benefit-row {
     background-color: #eee;
     @media ($tablet-widths) {

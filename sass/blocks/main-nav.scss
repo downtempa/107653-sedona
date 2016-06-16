@@ -18,36 +18,11 @@
         padding: 0;
         @media ($tablet-widths) {
           display: flex;
-          justify-content: space-between;
-        }
-      }
-
-
-      &__col {
-        @media ($tablet-widths) {
-          width: 42.93%;
-        }
-
-        // УБИРАЮ НЕНУЖНЫЕ БОРДЕРЫ В МОБИЛЬНОМ МЕНЮ, сомневаюсь, что так каскад правильно писать=)
-        &--left .main-nav__item:first-child {
-          border-top: none;
-        }
-        &--right .main-nav__item:last-child {
-          border-bottom: none;
-        }
-      }
-
-      // вложенный список, по разные стороны логотипа (а надо ли?)
-      &__sub-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        @media ($tablet-widths) {
-          display: flex;
-          justify-content: space-around;
           flex-wrap: wrap;
         }
       }
+
+
 
       // обертка пункта меню, задаю бордеры, убираю в &__col
       &__item {
@@ -56,6 +31,12 @@
         @media ($tablet-widths) {
           border-top: none;
           border-bottom: none;
+          width: 20%;
+        }
+        &:nth-child(4n+2) {
+          @media ($tablet-widths) {
+            margin-right: 20%;
+          }
         }
         &:hover {
           border-top: 1px solid darken($blue-sky, 5%);
