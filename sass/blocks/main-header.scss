@@ -1,13 +1,14 @@
 .main-header {
   position: relative;
-  padding-bottom: 373px;
+  padding-bottom: 389px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
-  background-size: 738px auto;
+  background-size: 764px 388px;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background: url("../img/bg-back-mobile@2x.jpg") no-repeat center bottom;
-    background-size: 738px auto;
+    background-size: 738px 388px;
   }
   @media ($tablet-widths) {
+    padding-bottom: 518px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
   background-size: 1200px auto;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -19,7 +20,7 @@
     position: absolute;
     display: block;
     content: "";
-    height: 29px;
+    height: 26px;
     bottom: 0;
     width: 100%;
     background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
@@ -29,13 +30,14 @@
       background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
     }
     @media ($desktop-widths) {
+      min-width: 1200px;
       background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
     }
   }
   // белая псевдо-панелька
   &__top-panel {
     background-color: white;
-    min-height: 58px;
+    min-height: 55px;
     position: relative;
     box-shadow: 0 -3px 5px 0px rgba(0, 0, 0, 0.2);
     //   padding-bottom: 410px;
@@ -48,8 +50,8 @@
   // переключатель гамбургер
   &__toggle {
     position: absolute;
-    top: 16px;
-    right: 3%;
+    top: 15px;
+    right: 6%;
     display: block;
     width: 23px;
     height: 23px;
@@ -78,9 +80,12 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 60px;
+    bottom: 85px;
     width: 280px;
     margin: auto;
-
+    @media ($tablet-widths) {
+      width: 458px;
+      bottom: 90px;
+    }
   }
 }

@@ -1,5 +1,36 @@
 .intro {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 28px;
   text-align: center;
+  @media ($tablet-widths) {
+    padding-top: 51px;
+    padding-bottom: 37px;
+  }
+  @media ($desktop-widths) {
+    background-color: white;
+      }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 16px;
+    bottom: 0;
+    width: 100%;
+    background: url("../img/bg-intro-triangle-mobile--blue-sky.svg") no-repeat;
+    background-size: 100% auto;
+    @media ($tablet-widths) {
+      display: none;
+    }
+  }
+  &--outro {
+    padding-top: 27px;
+    padding-bottom: 50px;
+    &::after {
+      display: none;
+    }
+  }
   &__title {
     max-width: 445px;
     margin: 0 auto;
@@ -11,8 +42,15 @@
     font-weight: 900;
     color: black;
     text-transform: uppercase;
+    @media ($tablet-widths) {
+      font-size: 21px;
+    }
+    &--outro {
+      font-size: 21px;
+    }
   }
   &__description {
+    margin-top: 27px;
     padding-right: 8%;
     padding-left: 8%;
     font-family: $main-font;
@@ -21,6 +59,9 @@
     color: $dark-grey;
     font-weight: 400;
     text-transform: uppercase;
-
+    &--outro {
+      margin-top: 19px;
+      line-height: 24px;
+    }
   }
 }

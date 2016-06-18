@@ -13,12 +13,23 @@
   font-weight: 900;
   color: white;
   text-transform: uppercase;
-  background-color: $blue-sky;
+
   box-sizing: border-box;
   &--search {
     width: 280px;
+    margin-top: 22px;
+    background-color: $blue-sky;
     @media ($tablet-widths) {
       width: 460px;
+    }
+    &:hover {
+      background-color: darken($blue-sky, 5%);
+      transition: 0.3s;
+    }
+    &:active {
+      background-color: darken($blue-sky, 10%);
+      color: rgba(255, 255, 255, 0.3);
+      transition: 0.3s;
     }
   }
   &--like {
