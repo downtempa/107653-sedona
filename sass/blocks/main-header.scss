@@ -10,11 +10,20 @@
   @media ($tablet-widths) {
     padding-bottom: 518px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center bottom;
-  background-size: 1200px auto;
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom;
     background-size: 1200px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center bottom;
+      background-size: 1200px auto;
+    }
   }
+  &--inner {
+    padding-bottom: 157px;
+    @media ($tablet-widths) {
+      padding-bottom: 291px;
+    }
+    @media ($desktop-widths) {
+      padding-bottom: 302px;
+    }
   }
   &::after {
     position: absolute;
@@ -86,6 +95,14 @@
     @media ($tablet-widths) {
       width: 458px;
       bottom: 90px;
+    }
+    &--short {
+      bottom: 66px;
+      width: 230px;
+      @media ($tablet-widths) {
+        width: 463px;
+        bottom: 117px;
+      }
     }
   }
 }

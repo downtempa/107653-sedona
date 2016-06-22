@@ -11,7 +11,10 @@
     @media ($tablet-widths) {
       display: flex;
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
+    }
+    @media ($desktop-widths) {
+      padding-bottom: 37px;
     }
   }
   &__search {

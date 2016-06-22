@@ -10,7 +10,7 @@
   @media ($desktop-widths) {
     background-color: white;
       }
-
+  // верхняя треугольная маска
   &::after {
     position: absolute;
     display: block;
@@ -24,13 +24,43 @@
       display: none;
     }
   }
-  &--outro {
-    padding-top: 27px;
-    padding-bottom: 50px;
+  // внутренние страницы
+  &--inner {
+
+    padding-bottom: 13px;
+    // border-bottom: 1px solid #e5e5e5;
+    @media ($tablet-widths) {
+      margin-bottom: 0;
+      padding-top: 74px;
+      padding-bottom: 54px;
+      // border-bottom: none;
+    }
+    @media ($desktop-widths) {
+      width: 100%;
+      padding-top: 112px;
+    }
+    // бех маски
     &::after {
       display: none;
     }
   }
+  // блок интро в нижней части страницы
+  &--outro {
+    padding-top: 27px;
+    padding-bottom: 50px;
+    @media ($tablet-widths) {
+      padding-top: 56px;
+      padding-bottom: 59px;
+    }
+    @media ($desktop-widths) {
+      padding-bottom: 68px;
+    }
+    // без маски
+    &::after {
+      display: none;
+    }
+  }
+  // заголовок
   &__title {
     max-width: 445px;
     margin: 0 auto;
@@ -45,10 +75,20 @@
     @media ($tablet-widths) {
       font-size: 21px;
     }
+    // для внутренних страниц
+    &--inner {
+      @media ($tablet-widths) {
+        font-size: 30px;
+      }
+    }
     &--outro {
       font-size: 21px;
+      @media ($tablet-widths) {
+        font-size: 30px;
+      }
     }
   }
+  // текстовая часть
   &__description {
     margin-top: 27px;
     padding-right: 8%;
@@ -59,9 +99,46 @@
     color: $dark-grey;
     font-weight: 400;
     text-transform: uppercase;
+    // для внутренних страниц
+    &--inner {
+      padding-right: 24px;
+      padding-left: 24px;
+      line-height: 24px;
+      margin-top: 25px;
+      @media ($tablet-widths) {
+        padding-right: 102px;
+      padding-left: 102px;
+      margin-top: 31px;
+      }
+      @media ($desktop-widths) {
+        padding-right: 386px;
+      padding-left: 386px;
+      margin-top: 31px;
+      }
+    }
+    // блок интро в нижней части страницы
     &--outro {
       margin-top: 19px;
       line-height: 24px;
+      @media ($tablet-widths) {
+        margin-top: 30px;
+        padding-right: 186px;
+        padding-left: 186px;
+      }
+      @media ($desktop-widths) {
+        padding-left: 402px;
+        padding-right: 402px;
+      }
+    }
+  }
+  // кнопка поиска, появляется = блок интро в нижней части страницы
+  &__search-btn {
+    margin-top: 22px;
+    @media ($tablet-widths) {
+      margin-top: 29px;
+    }
+    @media ($desktop-widths) {
+      margin-top: 34px;
     }
   }
 }

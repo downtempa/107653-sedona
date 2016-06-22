@@ -1,25 +1,87 @@
 .post {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  border-top: 1px solid #e5e5e5;
   @media ($tablet-widths) {
     width: 50%;
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 12px;
+    background-color: #f2f2f2;
   }
   &--panorama {
     @media ($tablet-widths) {
       width: 100%;
     }
   }
+  &--pick-out {
+    @media ($tablet-widths) {
+      background-color: #eaeaea;
+    }
+  }
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+      width: 100%;
+    }
+  }
+  &__footer {
+    @media ($tablet-widths) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+  &__footer-wrapper {
+    width: 70%;
+    margin-right: 11px;
+  }
   &__title {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 900;
-  color: black;
-  text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      // width: 75%;
+      padding-right: 20px;
+      margin-left: 20px;
+      // margin-right: 38px;
+    }
   }
   &__author {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $dark-grey;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $dark-grey;
+    @media ($tablet-widths) {
+      order: 4;
+      margin-left: 20px;
+    }
+  }
+  &__like {
+    @media ($tablet-widths) {
+      padding-top: 22px;
+    }
+    &--panorama {
+      margin-left: 98px;
+    }
+  }
+  &__likes-sum {
+    margin-left: 9px;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    color: black;
+    @media ($tablet-widths) {
+      margin-left: 5px;
+    }
   }
 }

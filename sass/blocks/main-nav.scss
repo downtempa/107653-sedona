@@ -21,9 +21,6 @@
           flex-wrap: wrap;
         }
       }
-
-
-
       // обертка пункта меню, задаю бордеры, убираю в &__col
       &__item {
         border-top: 1px solid lighten($blue-sky, 10%);
@@ -53,7 +50,6 @@
           }
         }
       }
-
       // пункт меню
       &__link {
         display: block;
@@ -78,8 +74,11 @@
         }
         &--form {
           @media ($tablet-widths) {
-          padding-left: 27px;
-        }
+            padding-left: 27px;
+          }
+          @media ($desktop-widths) {
+            padding-left: 22px;
+          }
         }
         &:hover {
           background-color: darken($blue-sky, 5%);
@@ -95,11 +94,10 @@
           transition: 0.3s;
           @media ($tablet-widths) {
             background-color: transparent;
-            color: rgba(255, 255, 255, 0.3);
+            color: rgba(0, 0, 0, 0.3);
           }
         }
       }
-
       // переключатель
       &__toggle {
         position: absolute;

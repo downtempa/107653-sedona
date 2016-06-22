@@ -19,10 +19,12 @@
     }
     @media ($tablet-widths) {
       width: 33.33%;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 33px;
+      padding-right: 33px;
+      border-bottom: none;
     }
   }
+  // !!!!!box-sizing: border-box;
   &__wrapper {
     width: 280px;
     margin: 0 auto;
@@ -32,14 +34,18 @@
     @media ($tablet-widths) {
       width: 33.33%;
       margin: 0;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding-top: 28px;
+      padding-right: 45px;
+      padding-left: 45px;
       box-sizing: border-box;
+    }
+    @media ($desktop-widths) {
+      padding-top: 35px;
+      padding-right: 55px;
+      padding-left: 55px;
     }
   }
   &__title {
-    // padding-right: 8%;
-    // padding-left: 8%;
     margin-bottom: 10px;
     font-family: $main-font;
     font-size: 18px;
@@ -48,9 +54,27 @@
     color: white;
     text-transform: uppercase;
     // text-align: center;
+    @media ($tablet-widths) {
+      padding-right: 8px;
+      padding-left: 7px;
+      font-size: 21px;
+    }
+    @media ($desktop-widths) {
+      padding-right: 70px;
+      padding-left: 69px;
+      font-size: 21px;
+    }
     &--short {
       margin-top: 0;
       color: black;
+      @media ($tablet-widths) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      @media ($desktop-widths) {
+        padding-right: 90px;
+        padding-left: 90px;
+      }
     }
   }
   &__description {
@@ -63,6 +87,13 @@
     font-weight: 400;
     text-transform: uppercase;
     // text-align: center;
+    @media ($tablet-widths) {
+      margin-top: 21px;
+    }
+    @media ($desktop-widths) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
     &--short {
       color: $dark-grey;
       padding-right: 16px;
@@ -99,13 +130,16 @@
       left: 0;
       right: 0;
       bottom: 0;
-      width: 18%;
+      width: 50px;
       z-index: -1;
       border-top: 2px solid white;
+      @media ($tablet-widths) {
+        top: 45%;
+      }
     }
     &--short:before {
       border-top: 2px solid #979797;
-      width: 18%;
+      width: 50px;
     }
   }
   &__picture {
@@ -114,18 +148,26 @@
     max-height: 460px;
     @media ($tablet-widths) {
       width: 66.66%;
+      min-height: 255px;
+      max-height: 0;
     }
     &--order_reverse {
       @media ($tablet-widths) {
         order: -1;
       }
-
     }
   }
   &__picture img {
     vertical-align: bottom;
-        margin-left: -103px;
-        max-width: none;
+    margin-left: -103px;
+    max-width: none;
     width: 163%;
+    @media ($tablet-widths) {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    @media ($desktop-widths) {
+      margin-top: -73px;
+    }
   }
 }
