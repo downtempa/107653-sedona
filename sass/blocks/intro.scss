@@ -63,6 +63,13 @@
   }
   &--video {
     padding-bottom: 20px;
+    @media ($tablet-widths) {
+      margin-bottom: 39px;
+    }
+    @media ($desktop-widths) {
+      padding-top: 72px;
+      margin-bottom: 37px;
+    }
   }
   // заголовок
   &__title {
@@ -93,6 +100,9 @@
     }
     &--video {
       font-size: 18px;
+      @media ($tablet-widths) {
+        font-size: 30px;
+      }
     }
   }
   // текстовая часть
@@ -137,8 +147,18 @@
         padding-right: 402px;
       }
     }
-&--video {
+    &--video {
       margin-top: 27px;
+      @media ($tablet-widths) {
+        margin-top: 30px;
+        padding-left: 176px;
+        padding-right: 176px;
+      }
+      @media ($desktop-widths) {
+        margin-top: 30px;
+        padding-left: 413px;
+        padding-right: 413px;
+      }
     }
   }
   // кнопка поиска, появляется = блок интро в нижней части страницы
