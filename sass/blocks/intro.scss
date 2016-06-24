@@ -38,6 +38,7 @@
     @media ($desktop-widths) {
       width: 100%;
       padding-top: 112px;
+      padding-bottom: 56px;
     }
     // бех маски
     &::after {
@@ -59,6 +60,9 @@
     &::after {
       display: none;
     }
+  }
+  &--video {
+    padding-bottom: 20px;
   }
   // заголовок
   &__title {
@@ -86,6 +90,9 @@
       @media ($tablet-widths) {
         font-size: 30px;
       }
+    }
+    &--video {
+      font-size: 18px;
     }
   }
   // текстовая часть
@@ -129,6 +136,9 @@
         padding-left: 402px;
         padding-right: 402px;
       }
+    }
+&--video {
+      margin-top: 27px;
     }
   }
   // кнопка поиска, появляется = блок интро в нижней части страницы
