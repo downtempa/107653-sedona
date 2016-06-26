@@ -18,37 +18,9 @@
         padding: 0;
         @media ($tablet-widths) {
           display: flex;
-          justify-content: space-between;
-        }
-      }
-
-
-      &__col {
-        @media ($tablet-widths) {
-          width: 42.93%;
-        }
-
-        // УБИРАЮ НЕНУЖНЫЕ БОРДЕРЫ В МОБИЛЬНОМ МЕНЮ, сомневаюсь, что так каскад правильно писать=)
-        &--left .main-nav__item:first-child {
-          border-top: none;
-        }
-        &--right .main-nav__item:last-child {
-          border-bottom: none;
-        }
-      }
-
-      // вложенный список, по разные стороны логотипа (а надо ли?)
-      &__sub-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        @media ($tablet-widths) {
-          display: flex;
-          justify-content: space-around;
           flex-wrap: wrap;
         }
       }
-
       // обертка пункта меню, задаю бордеры, убираю в &__col
       &__item {
         border-top: 1px solid lighten($blue-sky, 10%);
@@ -56,26 +28,33 @@
         @media ($tablet-widths) {
           border-top: none;
           border-bottom: none;
+          width: 20%;
+        }
+        &:nth-child(4n+2) {
+          @media ($tablet-widths) {
+            margin-right: 20%;
+          }
         }
         &:hover {
           border-top: 1px solid darken($blue-sky, 5%);
+          transition: 0.3s;
           @media ($tablet-widths) {
             border-top: none;
           }
         }
         &:active {
           border-top: 1px solid darken($blue-sky, 10%);
+          transition: 0.3s;
           @media ($tablet-widths) {
             border-top: none;
           }
         }
       }
-
       // пункт меню
       &__link {
         display: block;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 7px;
+        padding-bottom: 7px;
         padding-right: 20px;
         padding-left: 20px;
         font-family: $main-font;
@@ -93,8 +72,17 @@
           line-height: 26px;
           color: black;
         }
+        &--form {
+          @media ($tablet-widths) {
+            padding-left: 27px;
+          }
+          @media ($desktop-widths) {
+            padding-left: 22px;
+          }
+        }
         &:hover {
           background-color: darken($blue-sky, 5%);
+          transition: 0.3s;
           @media ($tablet-widths) {
             background-color: transparent;
             color: $blue-sky;
@@ -102,19 +90,19 @@
         }
         &:active {
           background-color: darken($blue-sky, 10%);
-          color: darken(white, 30%);
+          color: rgba(255, 255, 255, 0.3);
+          transition: 0.3s;
           @media ($tablet-widths) {
             background-color: transparent;
-            color: lighten(black, 70%);
+            color: rgba(0, 0, 0, 0.3);
           }
         }
       }
-
       // переключатель
       &__toggle {
         position: absolute;
         top: 16px;
-        right: 3%;
+        right: 6%;
         display: block;
         width: 23px;
         height: 23px;

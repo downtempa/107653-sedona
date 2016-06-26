@@ -1,8 +1,16 @@
 .main-footer {
+  padding-top: 32px;
+  padding-bottom: 10px;
   text-align: center;
   @media ($tablet-widths) {
     display: flex;
     justify-content: space-around;
+
+    padding-bottom: 29px;
+  }
+  @media ($desktop-widths) {
+
+    background-color: white;
   }
   &__logo {
     font-family: $main-font;
@@ -11,5 +19,27 @@
     color: black;
     font-weight: 900;
     text-transform: uppercase;
+    text-decoration: none;
+    @media ($tablet-widths) {
+      width: 33.33%;
+      margin-top: 10px;
+    }
+  }
+  &__social {
+    margin-top: 36px;
+     @media ($tablet-widths) {
+      width: 33.33%;
+     margin-top: 0;
+    }
+  }
+  &__copyright {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 31px;
+    @media ($tablet-widths) {
+      width: 33.33%;
+      margin: 0;
+    }
   }
 }

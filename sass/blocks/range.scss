@@ -2,12 +2,10 @@
   .range {
   background-color: transparent;
   position: relative;
-  // margin: 18px 0;
+
   width: 100%;
   -webkit-appearance: none;
   @media ($tablet-widths) {
-    //   margin-top: 23px;
-    //   margin-right: -7px;
     width: 200px;
     min-height: 44px;
   }
@@ -41,9 +39,9 @@
   }
   // RANGE THUMB
   &::-webkit-slider-thumb {
-    width: 14px;
-    height: 14px;
-    margin-top: -6px;
+    width: 9px;
+    height: 9px;
+    margin-top: -3px;
     cursor: pointer;
     // box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     // border: 2px solid #d22957;
@@ -52,9 +50,9 @@
     -webkit-appearance: none;
   }
   &::-moz-range-thumb {
-    width: 10px;
-    height: 10px;
-    margin-top: -6px;
+    width: 9px;
+    height: 9px;
+    margin-top: -3px;
     cursor: pointer;
     // box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     // border: 2px solid black;
@@ -62,8 +60,8 @@
     background: white;
   }
   &::-ms-thumb {
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     margin-top: 0;
     cursor: pointer;
     // border: 2px solid black;

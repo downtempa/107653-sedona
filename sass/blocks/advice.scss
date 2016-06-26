@@ -1,10 +1,15 @@
 .advice {
-  padding-top: 24px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 20px;
   background-color: white;
   @media ($tablet-widths) {
     width: 100%;
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 43px;
+  }
+  @media ($desktop-widths) {
+    padding-bottom: 63px;
   }
   &__wrapper {
     width: 280px;
@@ -13,6 +18,11 @@
       display: flex;
       margin: 0 auto;
       width: 728px;
+      justify-content: center;
+    }
+    @media ($desktop-widths) {
+    justify-content: flex-start;
+    width: auto;
     }
   }
   &__title {
@@ -29,6 +39,15 @@
     text-transform: uppercase;
     @media ($tablet-widths) {
       margin-left: 0;
+      margin-top: 28px;
+      margin-bottom: 20px;
+      font-size: 21px;
+    }
+    &--gift {
+      margin-left: 13px;
+      @media ($tablet-widths) {
+        margin-left: 0;
+      }
     }
   }
   &__description {
@@ -51,15 +70,60 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 2px;
+    margin-bottom: 2px;
     padding-right: 20px;
     @media ($tablet-widths) {
+      width: 22.33%;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      margin-right: 98px;
+      padding-right: 0;
+    }
+    @media ($desktop-widths) {
+      width: 33.33%;
+      margin-right: 0;
+      padding-right: 56px;
+      padding-left: 56px;
+    }
+    &--gift {
+      @media ($tablet-widths) {
+        order: 3;
+        margin-right: 0;
+      }
+    }
+    &--food {
+      @media ($tablet-widths) {
+        width: 21%;
+        order: 2;
+
+      }
+      @media ($desktop-widths) {
+        width: 33.33%;
+      }
     }
   }
   &__picture {
     width: 40px;
+    @media ($tablet-widths) {
+      width: 76px;
+    }
+    &--gift {
+      width: 31px;
+      margin-left: 6px;
+      @media ($tablet-widths) {
+        width: 62px;
+        margin-top: -2px;
+        margin-left: -4px;
+      }
+    }
+    &--food {
+      width: 39px;
+      margin-top: 7px;
+      @media ($tablet-widths) {
+        width: 75px;
+        margin-top: 4px;
+      }
+    }
   }
 }

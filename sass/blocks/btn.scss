@@ -13,22 +13,55 @@
   font-weight: 900;
   color: white;
   text-transform: uppercase;
-  background-color: $blue-sky;
   box-sizing: border-box;
-  &--search {
-    width: 280px;
+  border: none;
+  width: 280px;
+  background-color: $blue-sky;
+  @media ($tablet-widths) {
+    width: 460px;
+  }
+  &--submit {
     @media ($tablet-widths) {
-      width: 460px;
+      width: 324px;
+      padding-right: 21px;
     }
+    @media ($desktop-widths) {
+      width: 480px;
+    padding-right: 8px;
+    }
+  }
+  &:hover {
+    background-color: darken($blue-sky, 5%);
+    transition: 0.3s;
+  }
+  &:active {
+    background-color: darken($blue-sky, 10%);
+    color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
   }
   &--like {
     width: 23px;
     height: 21px;
     padding: 0;
     background-color: transparent;
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: 100%;
-    background: url("../../img/icon-like.svg") no-repeat center center;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-indent: 100%;
+    // background: url("../img/icon-like.svg") no-repeat center center;
+    & svg {
+      fill: rgba(0, 0, 0, 0.3);
+      @media ($desktop-widths) {
+        fill: white;
+      }
+    }
+  }
+  &--popup-succes {
+    font-size: 18px;
+  }
+  &--popup-failure {
+    width: 180px;
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

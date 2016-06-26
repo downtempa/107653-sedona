@@ -1,0 +1,127 @@
+.attractions {
+  @media ($tablet-widths) {
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+    margin-bottom: 9px;
+    @media ($desktop-widths) {
+      margin-bottom: 24px;
+    }
+  }
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 12px;
+    @media ($tablet-widths) {
+      width: 100%;
+      padding-top: 57px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 73%;
+      justify-content: space-between;
+    }
+    @media ($desktop-widths) {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+  &__legend {
+    position: relative;
+    top: 18px;
+    @media ($tablet-widths) {
+      position: static;
+      width: 400px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &__label {
+    position: relative;
+    margin-bottom: 54px;
+    padding-left: 79px;
+    text-align: left;
+
+    @media ($tablet-widths) {
+      padding-left: 77px;
+      width: 27%;
+      margin-bottom: 62px;
+      margin-left: 10px;
+    }
+    @media ($desktop-widths) {
+      width: 13%;
+      margin-left: 0;
+      margin-right: 54px;
+      margin-bottom: 45px;
+      padding-left: 81px;
+    }
+
+    &:last-child {
+      margin-bottom: 29px;
+      @media ($desktop-widths) {
+       margin-bottom: 20px;
+      }
+    }
+    // &:nth-child(4n) {
+    //   @media ($desktop-widths) {
+    //     margin-left: -26px;
+    //   }
+    // }
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: -15px;
+      left: 0;
+      width: 55px;
+      height: 56px;
+      background-color: #f2f2f2;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    &[for="diablo"] {
+      @media ($tablet-widths) {
+        order: 1;
+      }
+    }
+    &[for="park"] {
+      @media ($tablet-widths) {
+        order: 3;
+      }
+      @media ($desktop-widths) {
+        margin-right: 28px;
+      }
+    }
+    &[for="mountain"]{
+      @media ($tablet-widths) {
+        order: 2;
+      }
+    }
+    &[for="rock"]{
+      @media ($tablet-widths) {
+        order: 4;
+      }
+      @media ($desktop-widths) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &[id="diablo"]:checked ~ label[for="diablo"]::before {
+      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
+    }
+    &[id="park"]:checked ~ label[for="park"]::before {
+      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
+    }
+    &[id="mountain"]:checked ~ label[for="mountain"]::before {
+      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
+    }
+    &[id="rock"]:checked ~ label[for="rock"]::before {
+      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
+    }
+  }
+}

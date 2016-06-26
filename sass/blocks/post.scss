@@ -1,25 +1,147 @@
 .post {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  border-top: 1px solid #e5e5e5;
   @media ($tablet-widths) {
     width: 50%;
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 12px;
+    background-color: #f2f2f2;
   }
+  @media ($desktop-widths) {
+    position: relative;
+    width: 33.33%;
+    padding-bottom: 0;
+  }
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+    @media ($tablet-widths) {
+      border-bottom: none;
+    }
+  }
+
+  // первый панорамный пост
   &--panorama {
     @media ($tablet-widths) {
       width: 100%;
     }
   }
-  &__title {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 900;
-  color: black;
-  text-transform: uppercase;
+  &__picture img {
+    @media ($desktop-widths) {
+    vertical-align: bottom;
   }
+
+}
+  // пост с более темным серым фоном
+  &--pick-out {
+    @media ($tablet-widths) {
+      background-color: #eaeaea;
+    }
+  }
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    @media ($tablet-widths) {
+      width: 100%;
+    }
+  }
+
+
+  // блок с описанием и авторством
+  &__footer {
+    // padding-top: 4px;
+    @media ($tablet-widths) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    @media ($desktop-widths) {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-top: 4px;
+      padding-bottom: 11px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__footer-wrapper {
+    @media ($tablet-widths) {
+      width: 70%;
+    margin-right: 11px;
+    }
+    @media ($desktop-widths) {
+      margin-right: 35px;
+    }
+
+  }
+  // заголовок
+  &__title {
+    margin-bottom: 0;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    color: black;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      // width: 75%;
+      padding-right: 20px;
+      margin-left: 20px;
+      // margin-right: 38px;
+    }
+    @media ($desktop-widths) {
+      margin-left: 22px;
+      color: white;
+    }
+  }
+  // автор
   &__author {
-  font-family: $main-font;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $dark-grey;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $dark-grey;
+    @media ($tablet-widths) {
+      order: 4;
+      margin-left: 20px;
+    }
+    @media ($desktop-widths) {
+      margin-left: 22px;
+      color: white;
+    }
+  }
+  // thumbs up + количесво лайков
+  &__like {
+    @media ($tablet-widths) {
+      align-self: flex-end;
+      margin-bottom: 14px;
+    }
+    &--panorama {
+      @media ($tablet-widths) {
+        margin-left: 98px;
+      }
+      @media ($desktop-widths) {
+        margin-left: 240px;
+      }
+    }
+  }
+  // количесво лайков
+  &__likes-sum {
+    margin-left: 9px;
+    font-family: $main-font;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    color: black;
+    @media ($tablet-widths) {
+      margin-left: 5px;
+    }
+    @media ($desktop-widths) {
+      color: white;
+    }
   }
 }

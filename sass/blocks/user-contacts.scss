@@ -1,0 +1,156 @@
+.user-contacts {
+  @media ($tablet-widths) {
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 69px;
+    margin-bottom: 24px;
+  }
+  @media ($desktop-widths) {
+    margin-top: 67px;
+    margin-bottom: 23px;
+  }
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 38px;
+    padding-bottom: 28px;
+    @media ($tablet-widths) {
+      width: 100%;
+      padding-top: 25px;
+    }
+    @media ($desktop-widths) {
+      flex-direction: row;
+    padding-top: 76px;
+    }
+  }
+  &__input-container {
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 42px;
+    @media ($tablet-widths) {
+      margin-bottom: 24px;
+
+    }
+    @media ($desktop-widths) {
+      width: 50%;
+      display: flex;
+      margin-bottom: 0;
+    }
+    &:first-child {
+      @media ($desktop-widths) {
+        padding-right: 80px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__legend {
+    position: relative;
+    top: 18px;
+    @media ($tablet-widths) {
+      position: static;
+      padding-right: 64px;
+      padding-left: 64px;
+    }
+  }
+  &__label {
+    position: relative;
+    text-align: left;
+    margin-left: 22px;
+    @media ($tablet-widths) {
+      display: block;
+      padding-right: 214px;
+    }
+    @media ($desktop-widths) {
+      align-self: center;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 21px;
+    // margin-right: 23px;
+    // margin-left: 79px;
+    }
+    // &--tel {
+    //   @media ($desktop-widths) {
+    //     margin-left: 0;
+    //     margin-right: 21px;
+    //   }
+    // }
+    &--tel::before {
+      display: block;
+      position: absolute;
+      top: 91px;
+      left: 0;
+      width: 191px;
+      height: 10px;
+      content: "Ошибка, перепроверьте номер";
+      font-family: $main-font;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #ff5c5c;
+      text-transform: none;
+      @media ($tablet-widths) {
+        top: -3px;
+        left: 436px;
+      }
+      @media ($desktop-widths) {
+        top: -51px;
+    left: 106px;
+      }
+    }
+    & span {
+      @media ($desktop-widths) {
+        display: none;
+      }
+    }
+  }
+  &__input {
+    box-sizing: border-box;
+    margin-top: 7px;
+    width: 100%;
+    padding-right: 68px;
+    @media ($tablet-widths) {
+      align-self: center;
+    }
+    @media ($desktop-widths) {
+      flex-grow: 1;
+      width: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    // &:last-child {
+    //   margin-bottom: 16px;
+    //   @media ($desktop-widths) {
+    //     margin-bottom: 0;
+    //   }
+    // }
+    &--tel {
+      background-image: url("../img/icon-phone.svg"), linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
+      background-repeat: no-repeat;
+      background-position: 92% 50%;
+      @media ($tablet-widths) {
+        background-position: 97% 50%;
+      }
+      @media ($desktop-widths) {
+        // width: 314px;
+        background-position: 94% 50%;
+      }
+    }
+    &--mail {
+      background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
+      background-repeat: no-repeat;
+      background-position: 92% 50%;
+      @media ($tablet-widths) {
+        background-position: 96.5% 50%;
+      }
+      @media ($desktop-widths) {
+        // width: 314px;
+        background-position: 93.5% 50%;
+      }
+    }
+  }
+}

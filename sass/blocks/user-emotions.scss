@@ -1,0 +1,74 @@
+.user-emotions {
+  @media ($tablet-widths) {
+    width: 100%;
+    border-top: 1px solid #bdbdbd;
+    padding-top: 22px;
+    margin-bottom: 54px;
+  }
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 36px;
+    margin-bottom: 46px;
+    @media ($tablet-widths) {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+  &__legend {
+    position: relative;
+    top: 18px;
+    @media ($tablet-widths) {
+      position: static;
+      padding-right: 75px;
+      padding-left: 75px;
+    }
+  }
+  &__textarea {
+    width: 240px;
+    /* padding: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* min-height: 93px; */
+    height: 130px;
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 900;
+    color: black;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    @media ($tablet-widths) {
+      width: 100%;
+      box-sizing: border-box;
+      height: 159px;
+    }
+    &::-webkit-input-placeholder {
+      color: black;
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 26px;
+      opacity: 1;
+    }
+    &:-moz-placeholder {
+      color: black;
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 26px;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: black;
+      font-family: $main-font;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 26px;
+      opacity: 1;
+    }
+  }
+}
