@@ -1,8 +1,24 @@
 .legend {
+  // position: absolute;
+  // top: 18px;
+  // left: 0;
+  // right: 0;
+  // display: block;
   font-family: $main-font;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 900;
   color: black;
   text-transform: uppercase;
+  @media ($tablet-widths) {
+    font-size: 21px;
+  }
+  & span {
+    @media ($tablet-widths) {
+      display: none;
+    }
+    @media ($desktop-widths) {
+      display: inline-block;
+    }
+  }
 }

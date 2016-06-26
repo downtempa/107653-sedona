@@ -14,21 +14,30 @@
   color: white;
   text-transform: uppercase;
   box-sizing: border-box;
-  &--search {
-    width: 280px;
-    background-color: $blue-sky;
+  border: none;
+  width: 280px;
+  background-color: $blue-sky;
+  @media ($tablet-widths) {
+    width: 460px;
+  }
+  &--submit {
     @media ($tablet-widths) {
-      width: 460px;
+      width: 324px;
+      padding-right: 21px;
     }
-    &:hover {
-      background-color: darken($blue-sky, 5%);
-      transition: 0.3s;
+    @media ($desktop-widths) {
+      width: 480px;
+    padding-right: 8px;
     }
-    &:active {
-      background-color: darken($blue-sky, 10%);
-      color: rgba(255, 255, 255, 0.3);
-      transition: 0.3s;
-    }
+  }
+  &:hover {
+    background-color: darken($blue-sky, 5%);
+    transition: 0.3s;
+  }
+  &:active {
+    background-color: darken($blue-sky, 10%);
+    color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
   }
   &--like {
     width: 23px;
@@ -45,5 +54,14 @@
         fill: white;
       }
     }
+  }
+  &--popup-succes {
+    font-size: 18px;
+  }
+  &--popup-failure {
+    width: 180px;
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }

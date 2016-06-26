@@ -1,6 +1,25 @@
 .fieldset {
+  position: relative;
+  // padding-top: 82px;
+  // padding-bottom: 12px;
+  // padding-right: 20px;
+  // padding-left: 20px;
   border: none;
+  // border-top: 1px solid #e5e5e5;
   margin: 0;
   padding: 0;
   text-align: center;
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+     border-top: 1px solid #e5e5e5;
+     left: 0;
+     right: 0;
+     top: 0;
+     @media ($tablet-widths) {
+    display: none;
+  }
+  }
 }

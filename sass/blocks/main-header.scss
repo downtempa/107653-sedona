@@ -103,6 +103,10 @@
         width: 463px;
         bottom: 117px;
       }
+      @media ($desktop-widths) {
+        width: 463px;
+        bottom: 120px;
+      }
     }
   }
 }
