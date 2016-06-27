@@ -6,7 +6,7 @@
     height: 48px;
     background-color: $blue-sky;
 
-    &:not(: last-child) {
+    &:not(:last-child) {
       margin-right: 3px;
     }
 
