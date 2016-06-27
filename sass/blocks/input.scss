@@ -20,7 +20,7 @@
     opacity: 1;
   }
 
-  &:-moz-placeholder {
+  &::-moz-placeholder {
     color: black;
     font-family: $main-font;
     font-size: 18px;

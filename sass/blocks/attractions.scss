@@ -1,10 +1,11 @@
 .attractions {
+  padding-top: 6px;
   @media ($tablet-widths) {
     width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 22px;
     border-top: 1px solid #dbdbdb;
     @media ($desktop-widths) {
-      margin-bottom: 24px;
+      margin-bottom: 37px;
     }
   }
 
@@ -14,30 +15,32 @@
     flex-direction: column;
     width: 280px;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 19px;
     padding-bottom: 12px;
     @media ($tablet-widths) {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-between;
       width: 73%;
-      padding-top: 57px;
+      padding-top: 24px;
+      padding-left: 20px;
     }
     @media ($desktop-widths) {
       justify-content: flex-start;
       width: 100%;
+      padding-left: 0;
     }
   }
 
 
   &__legend {
-    position: relative;
-    top: 18px;
     @media ($tablet-widths) {
-      position: static;
-      width: 400px;
-      padding-left: 20px;
-      padding-right: 20px;
+      position: relative;
+      top: -32px;
+      background: white;
+      width: 360px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
   }
 
@@ -67,9 +70,10 @@
     padding-left: 79px;
     text-align: left;
     @media ($tablet-widths) {
-      width: 27%;
+      width: 26%;
       margin-bottom: 62px;
-      margin-left: 10px;
+      margin-right: 60px;
+      // margin-left: 10px;
       padding-left: 77px;
     }
     @media ($desktop-widths) {
@@ -79,6 +83,12 @@
       margin-bottom: 45px;
       padding-left: 81px;
     }
+
+    // &:nth-child(even) {
+    //   @media ($tablet-widths) {
+    //     margin-right: 0;
+    //   }
+    // }
 
     &:last-child {
       margin-bottom: 29px;
@@ -144,14 +154,16 @@
     &[for="mountain"] {
       @media ($tablet-widths) {
         order: 2;
+        margin-right: 0;
+      }
+      @media screen {
+        margin-right: 54px;
       }
     }
 
     &[for="rock"] {
       @media ($tablet-widths) {
         order: 4;
-      }
-      @media ($desktop-widths) {
         margin-right: 0;
       }
     }

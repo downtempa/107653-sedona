@@ -1,4 +1,5 @@
 .user-exp {
+  padding-top: 6px;
   @media ($tablet-widths) {
     width: 50%;
     order: -1;
@@ -12,11 +13,11 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding-top: 56px;
+    padding-top: 25px;
     padding-bottom: 0;
     @media ($tablet-widths) {
+      padding-top: 59px;
       width: 100%;
-      padding-top: 79px;
     }
     @media ($desktop-widths) {
       padding-left: 4px;
@@ -25,10 +26,8 @@
 
 
   &__legend {
-    position: relative;
-    top: 18px;
     @media ($tablet-widths) {
-      top: 6px;
+     margin-top: 0;
     }
     @media ($desktop-widths) {
       top: 6px;
