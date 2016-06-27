@@ -1,108 +1,94 @@
 .popup {
-    position: fixed;
-    top: 25%;
-    right: 0;
-    left: 0;
-    z-index: 2000;
-    display: none;
+  position: fixed;
+  top: 25%;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 26px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  @media ($tablet-widths) {
+    width: 640px;
+    padding-top: 32px;
+  }
 
-    width: 320px;
-    margin: 0 auto;
-    padding-top: 26px;
+  &--visible {
+    display: block;
+  }
 
-    text-align: center;
-
-    background: #fff;
-    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  &--failure {
+    padding-bottom: 35px;
     @media ($tablet-widths) {
-        width: 640px;
-        padding-top: 32px;
+      width: 400px;
+      padding-bottom: 49px;
     }
-    // @media ($desktop-widths) {
-    //     padding-top: 42px;
-    // }
-    &--visible {
-        display: block;
+
+    & .popup__title {
+      @media ($tablet-widths) {
+        line-height: 40px;
+        padding-left: 75px;
+        padding-right: 75px;
+      }
     }
-    &--failure {
-        padding-bottom: 35px;
-        @media ($tablet-widths) {
-          width: 400px;
-          padding-bottom: 49px;
 
-        }
-        // @media ($desktop-widths) {
-        //     width: 460px;
-
-        // }
-        & .popup__title {
-            @media ($tablet-widths) {
-              line-height: 40px;
-                padding-left: 75px;
-                padding-right: 75px;
-            }
-        }
-        & .popup__text {
-            margin-bottom: 23px;
-            padding-right: 42px;
-            padding-left: 42px;
-            @media ($tablet-widths) {
-                margin-bottom: 34px;
-            }
-        }
-
-    }
-    &__title {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-bottom: 25px;
-        color: black;
-
-        font-family: $main-font;
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 26px;
-        text-transform: uppercase;
-        @media ($tablet-widths) {
-            margin-bottom: 24px;
-
-            font-size: 30px;
-            line-height: 40px;
-        }
-        // @media ($desktop-widths) {
-        //     width: 410px;
-        // }
-    }
-    &__text {
+    & .popup__text {
+      margin-bottom: 23px;
+      padding-right: 42px;
+      padding-left: 42px;
+      @media ($tablet-widths) {
         margin-bottom: 34px;
-        padding-left: 40px;
-        padding-right: 40px;
-
-        color: #333;
-
-        font-family: $main-font;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        text-transform: uppercase;
-        @media ($tablet-widths) {
-            margin-bottom: 34px;
-            padding-left: 110px;
-        padding-right: 110px;
-        }
-        // @media ($desktop-widths) {
-        //     width: 385px;
-        //     margin-bottom: 38px;
-        // }
+      }
     }
-    &__footer {
-        padding-top: 20px;
-        padding-bottom: 20px;
+  }
 
-        background: #f2f2f2;
-        @media ($tablet-widths) {
-          padding-top: 44px;
-        padding-bottom: 44px;
-        }
+
+  &__title {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+    color: black;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 26px;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      margin-bottom: 24px;
+      font-size: 30px;
+      line-height: 40px;
     }
+  }
+
+
+  &__text {
+    margin-bottom: 34px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #333;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    @media ($tablet-widths) {
+      margin-bottom: 34px;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
+
+  &__footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f2f2f2;
+    @media ($tablet-widths) {
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+  }
 }

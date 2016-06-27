@@ -15,11 +15,11 @@
   text-transform: uppercase;
   box-sizing: border-box;
   border: none;
-  width: 280px;
   background-color: $blue-sky;
   @media ($tablet-widths) {
     width: 460px;
   }
+
   &--submit {
     @media ($tablet-widths) {
       width: 324px;
@@ -30,15 +30,18 @@
       padding-right: 8px;
     }
   }
+
   &:hover {
     background-color: darken($blue-sky, 5%);
     transition: 0.3s;
   }
+
   &:active {
     background-color: darken($blue-sky, 10%);
     color: rgba(255, 255, 255, 0.3);
     transition: 0.3s;
   }
+
   &--like {
     width: 23px;
     height: 21px;
@@ -57,6 +60,7 @@
       }
     }
   }
+
   &--disabled {
     color: white;
     background-color: #e5e5e5;
@@ -68,6 +72,7 @@
       background-color: #e5e5e5;
     }
   }
+
   // состояние в прогрессе
   &--progress {
     animation: progress 1.5s infinite alternate;
@@ -80,9 +85,11 @@
       }
     }
   }
+
   &--popup-succes {
     font-size: 18px;
   }
+
   &--popup-failure {
     width: 180px;
     font-size: 18px;

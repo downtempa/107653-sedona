@@ -5,6 +5,8 @@
     padding-top: 22px;
     margin-bottom: 54px;
   }
+
+
   &__wrapper {
     width: 280px;
     margin: 0 auto;
@@ -15,6 +17,8 @@
       margin-bottom: 0;
     }
   }
+
+
   &__legend {
     position: relative;
     top: 18px;
@@ -24,6 +28,8 @@
       padding-left: 75px;
     }
   }
+
+
   &__textarea {
     width: 240px;
     /* padding: 20px; */
@@ -46,6 +52,7 @@
       box-sizing: border-box;
       height: 159px;
     }
+
     &::-webkit-input-placeholder {
       color: black;
       font-family: $main-font;
@@ -54,6 +61,7 @@
       line-height: 26px;
       opacity: 1;
     }
+
     &:-moz-placeholder {
       color: black;
       font-family: $main-font;
@@ -62,6 +70,7 @@
       line-height: 26px;
       opacity: 1;
     }
+
     &:-ms-input-placeholder {
       color: black;
       font-family: $main-font;
@@ -70,13 +79,15 @@
       line-height: 26px;
       opacity: 1;
     }
+
     &:hover {
-    background-color: #e5e5e5;
-    transition: 0.3s;
-  }
-  &:focus {
-    background-color: white;
-    box-shadow: inset 0px 0px 0px 3px #e5e5e5;
-  }
+      background-color: #e5e5e5;
+      transition: 0.3s;
+    }
+
+    &:focus {
+      background-color: white;
+      box-shadow: inset 0px 0px 0px 3px #e5e5e5;
+    }
   }
 }

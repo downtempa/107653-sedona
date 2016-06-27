@@ -15,6 +15,7 @@
     width: 33.33%;
     padding-bottom: 0;
   }
+
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
     @media ($tablet-widths) {
@@ -28,18 +29,21 @@
       width: 100%;
     }
   }
+
   &__picture img {
     @media ($desktop-widths) {
-    vertical-align: bottom;
+      vertical-align: bottom;
+    }
   }
 
-}
   // пост с более темным серым фоном
   &--pick-out {
     @media ($tablet-widths) {
       background-color: #eaeaea;
     }
   }
+
+
   &__wrapper {
     width: 280px;
     margin: 0 auto;
@@ -66,16 +70,19 @@
       background-color: rgba(0, 0, 0, 0.3);
     }
   }
+
+
   &__footer-wrapper {
     @media ($tablet-widths) {
       width: 70%;
-    margin-right: 11px;
+      margin-right: 11px;
     }
     @media ($desktop-widths) {
       margin-right: 35px;
     }
-
   }
+
+
   // заголовок
   &__title {
     margin-bottom: 0;
@@ -96,6 +103,8 @@
       color: white;
     }
   }
+
+
   // автор
   &__author {
     margin-top: 0;
@@ -114,12 +123,15 @@
       color: white;
     }
   }
+
+
   // thumbs up + количесво лайков
   &__like {
     @media ($tablet-widths) {
       align-self: flex-end;
       margin-bottom: 14px;
     }
+
     &--panorama {
       @media ($tablet-widths) {
         margin-left: 98px;
@@ -129,6 +141,8 @@
       }
     }
   }
+
+
   // количесво лайков
   &__likes-sum {
     margin-left: 9px;

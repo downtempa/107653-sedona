@@ -5,13 +5,13 @@
   @media ($tablet-widths) {
     display: flex;
     justify-content: space-around;
-
     padding-bottom: 29px;
   }
   @media ($desktop-widths) {
-
     background-color: white;
   }
+
+
   &__logo {
     font-family: $main-font;
     font-size: 21px;
@@ -25,13 +25,17 @@
       margin-top: 10px;
     }
   }
+
+
   &__social {
     margin-top: 36px;
-     @media ($tablet-widths) {
+    @media ($tablet-widths) {
       width: 33.33%;
-     margin-top: 0;
+      margin-top: 0;
     }
   }
+
+
   &__copyright {
     width: 280px;
     margin-right: auto;

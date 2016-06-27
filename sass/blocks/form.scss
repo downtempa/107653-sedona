@@ -11,17 +11,19 @@
   @media ($desktop-widths) {
     width: 960px;
   }
+
+
   &__footnote {
     display: none;
     @media ($tablet-widths) {
       display: inline-block;
       font-family: $main-font;
-    font-size: 17px;
-    line-height: 26px;
-    font-weight: 400;
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 0.01rem;
+      font-size: 17px;
+      line-height: 26px;
+      font-weight: 400;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 0.01rem;
     }
   }
 }

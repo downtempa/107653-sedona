@@ -1,11 +1,13 @@
 .benefit {
   background-color: $blue-sky;
+
   &--full {
     @media ($tablet-widths) {
       display: flex;
       flex-wrap: wrap;
     }
   }
+
   &--short {
     width: 280px;
     margin: 0 auto;
@@ -14,6 +16,7 @@
     background-color: transparent;
     text-align: center;
     border-bottom: 1px solid #d6d6d6;
+
     &:last-child {
       border-bottom: none;
     }
@@ -24,6 +27,8 @@
       border-bottom: none;
     }
   }
+
+
   // !!!!!box-sizing: border-box;
   &__wrapper {
     width: 280px;
@@ -45,6 +50,8 @@
       padding-left: 55px;
     }
   }
+
+
   &__title {
     margin-bottom: 10px;
     font-family: $main-font;
@@ -53,7 +60,6 @@
     font-weight: 900;
     color: white;
     text-transform: uppercase;
-    // text-align: center;
     @media ($tablet-widths) {
       padding-right: 8px;
       padding-left: 7px;
@@ -64,6 +70,7 @@
       padding-left: 69px;
       font-size: 21px;
     }
+
     &--short {
       margin-top: 0;
       color: black;
@@ -77,16 +84,15 @@
       }
     }
   }
+
+
   &__description {
-    // padding-right: 8%;
-    // padding-left: 8%;
     font-family: $main-font;
     font-size: 14px;
     line-height: 21px;
     color: white;
     font-weight: 400;
     text-transform: uppercase;
-    // text-align: center;
     @media ($tablet-widths) {
       margin-top: 21px;
     }
@@ -100,6 +106,8 @@
       padding-left: 16px;
     }
   }
+
+
   &__number {
     padding-right: 5px;
     padding-left: 5px;
@@ -110,20 +118,21 @@
     font-weight: 400;
     text-transform: uppercase;
     background-color: $blue-sky;
+
     &--short {
       color: $dark-grey;
       background-color: #eee;
     }
   }
+
+
   &__number-wrapper {
     position: relative;
     z-index: 1;
+
     &:before {
       position: absolute;
       margin: 0 auto;
-      // top: 50%;
-      // left: 50%;
-      // margin-left: -25px;
       display: block;
       content: "";
       top: 50%;
@@ -137,11 +146,14 @@
         top: 45%;
       }
     }
+
     &--short:before {
       border-top: 2px solid #979797;
       width: 50px;
     }
   }
+
+
   &__picture {
     overflow: hidden;
     min-height: 260px;
@@ -157,6 +169,8 @@
       }
     }
   }
+
+
   &__picture img {
     vertical-align: bottom;
     margin-left: -103px;

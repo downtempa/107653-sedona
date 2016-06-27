@@ -9,6 +9,8 @@
     margin-top: 67px;
     margin-bottom: 23px;
   }
+
+
   &__wrapper {
     width: 280px;
     margin: 0 auto;
@@ -26,6 +28,8 @@
       padding-top: 76px;
     }
   }
+
+
   &__input-container {
     box-sizing: border-box;
     text-align: left;
@@ -38,15 +42,19 @@
       display: flex;
       margin-bottom: 0;
     }
+
     &:first-child {
       @media ($desktop-widths) {
         padding-right: 80px;
       }
     }
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
+
   &__legend {
     position: relative;
     top: 18px;
@@ -56,6 +64,8 @@
       padding-left: 64px;
     }
   }
+
+
   &__label {
     position: relative;
     text-align: left;
@@ -69,15 +79,8 @@
       padding-right: 0;
       margin-left: 0;
       margin-right: 21px;
-      // margin-right: 23px;
-      // margin-left: 79px;
     }
-    // &--tel {
-    //   @media ($desktop-widths) {
-    //     margin-left: 0;
-    //     margin-right: 21px;
-    //   }
-    // }
+
     &--tel::before {
       display: block;
       position: absolute;
@@ -101,12 +104,15 @@
         left: 106px;
       }
     }
+
     & span {
       @media ($desktop-widths) {
         display: none;
       }
     }
   }
+
+
   &__input {
     box-sizing: border-box;
     margin-top: 7px;
@@ -121,12 +127,7 @@
       margin-top: 0;
       margin-bottom: 0;
     }
-    // &:last-child {
-    //   margin-bottom: 16px;
-    //   @media ($desktop-widths) {
-    //     margin-bottom: 0;
-    //   }
-    // }
+
     &--tel {
       background-image: url("../img/icon-phone.svg"), linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
       background-repeat: no-repeat;
@@ -146,6 +147,7 @@
         background-image: url("../img/icon-phone.svg"), linear-gradient(to left, #e6e6e6 58px, #fff 58px);
       }
     }
+
     &--mail {
       background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
       background-repeat: no-repeat;
@@ -157,10 +159,12 @@
         // width: 314px;
         background-position: 93.5% 50%;
       }
+
       &:hover {
         background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #e5e5e5 58px);
         transition: 0.3s;
       }
+
       &:focus {
         background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #fff 58px);
       }
