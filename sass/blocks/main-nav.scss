@@ -12,6 +12,17 @@
       @media ($desktop-widths) {
         max-width: 1200px;
       }
+      // механика открытия меню
+      .js & {
+        display: none;
+        @media ($tablet-widths) {
+          display: block;
+        }
+      }
+      .js &--visible {
+        display: block;
+      }
+      // ----------------------------
       &__list {
         list-style: none;
         margin: 0;

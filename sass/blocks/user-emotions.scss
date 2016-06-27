@@ -70,5 +70,13 @@
       line-height: 26px;
       opacity: 1;
     }
+    &:hover {
+    background-color: #e5e5e5;
+    transition: 0.3s;
+  }
+  &:focus {
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 3px #e5e5e5;
+  }
   }
 }

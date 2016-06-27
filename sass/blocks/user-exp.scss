@@ -69,6 +69,18 @@
       cursor: pointer;
       border-radius: 58px;
     }
+    &:hover::before {
+      background-color: #e5e5e5;
+      transition: 0.3s;
+    }
+    &:active::before {
+      background-color: #d5d5d5;
+      transition: 0.3s;
+    }
+    &:active::after {
+      background-color: #a4a4a4;
+      transition: 0.3s;
+    }
   }
   &__radio {
     position: absolute;

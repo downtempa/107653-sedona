@@ -23,7 +23,7 @@
     }
     @media ($desktop-widths) {
       flex-direction: row;
-    padding-top: 76px;
+      padding-top: 76px;
     }
   }
   &__input-container {
@@ -32,7 +32,6 @@
     margin-bottom: 42px;
     @media ($tablet-widths) {
       margin-bottom: 24px;
-
     }
     @media ($desktop-widths) {
       width: 50%;
@@ -70,8 +69,8 @@
       padding-right: 0;
       margin-left: 0;
       margin-right: 21px;
-    // margin-right: 23px;
-    // margin-left: 79px;
+      // margin-right: 23px;
+      // margin-left: 79px;
     }
     // &--tel {
     //   @media ($desktop-widths) {
@@ -99,7 +98,7 @@
       }
       @media ($desktop-widths) {
         top: -51px;
-    left: 106px;
+        left: 106px;
       }
     }
     & span {
@@ -139,6 +138,13 @@
         // width: 314px;
         background-position: 94% 50%;
       }
+      &:hover {
+        background-image: url("../img/icon-phone.svg"), linear-gradient(to left, #e6e6e6 58px, #e5e5e5 58px);
+        transition: 0.3s;
+      }
+      &:focus {
+        background-image: url("../img/icon-phone.svg"), linear-gradient(to left, #e6e6e6 58px, #fff 58px);
+      }
     }
     &--mail {
       background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #f2f2f2 58px);
@@ -150,6 +156,13 @@
       @media ($desktop-widths) {
         // width: 314px;
         background-position: 93.5% 50%;
+      }
+      &:hover {
+        background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #e5e5e5 58px);
+        transition: 0.3s;
+      }
+      &:focus {
+        background-image: url("../img/icon-mail.svg"), linear-gradient(to left, #e6e6e6 58px, #fff 58px);
       }
     }
   }

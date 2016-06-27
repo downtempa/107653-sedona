@@ -37,6 +37,23 @@
       padding-right: 20px;
     }
   }
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &[id="diablo"]:checked ~ label[for="diablo"]::after {
+      display: block;
+    }
+    &[id="park"]:checked ~ label[for="park"]::after {
+      display: block;
+    }
+    &[id="mountain"]:checked ~ label[for="mountain"]::after {
+     display: block;
+    }
+    &[id="rock"]:checked ~ label[for="rock"]::after {
+      display: block;
+    }
+  }
   &__label {
     position: relative;
     margin-bottom: 54px;
@@ -80,6 +97,28 @@
       cursor: pointer;
       border-radius: 5px;
     }
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      top: 4px;
+      left:14px;
+      width: 24px;
+      height: 17px;
+      background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+    }
+    &:hover::before {
+      background-color: #e5e5e5;
+      transition: 0.3s;
+    }
+    &:active::before {
+      background-color: #d5d5d5;
+      transition: 0.3s;
+    }
+    &:active::after {
+      opacity: 0.3;
+      transition: 0.3s;
+    }
     &[for="diablo"] {
       @media ($tablet-widths) {
         order: 1;
@@ -107,21 +146,5 @@
       }
     }
   }
-  &__checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    &[id="diablo"]:checked ~ label[for="diablo"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
-    }
-    &[id="park"]:checked ~ label[for="park"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
-    }
-    &[id="mountain"]:checked ~ label[for="mountain"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
-    }
-    &[id="rock"]:checked ~ label[for="rock"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
-    }
-  }
+
 }

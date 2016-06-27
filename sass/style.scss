@@ -2,7 +2,6 @@
 @import "../node_modules/normalize.css/normalize.css";
 
 @import "variables";
-@import "mixins";
 @import "global/scafolding";
 // global
 @import "global/fonts";
@@ -20,7 +19,6 @@
 @import "blocks/main-nav";
 @import "blocks/popup";
 // 1.2
-  @import "blocks/logo";
   @import "blocks/promo";
   @import "blocks/map";
   @import "blocks/social";
@@ -40,7 +38,6 @@
     @import "blocks/form";
 // 3
     @import "blocks/advice";
-    @import "blocks/booking";
 
     @import "blocks/full-name";
     @import "blocks/user-contacts";

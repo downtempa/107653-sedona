@@ -27,7 +27,7 @@
     }
     @media ($desktop-widths) {
       width: 480px;
-    padding-right: 8px;
+      padding-right: 8px;
     }
   }
   &:hover {
@@ -44,14 +44,39 @@
     height: 21px;
     padding: 0;
     background-color: transparent;
-    // overflow: hidden;
-    // white-space: nowrap;
-    // text-indent: 100%;
-    // background: url("../img/icon-like.svg") no-repeat center center;
+    &:hover {
+      background-color: transparent;
+    }
+    &:active {
+      background-color: transparent;
+    }
     & svg {
       fill: rgba(0, 0, 0, 0.3);
       @media ($desktop-widths) {
         fill: white;
+      }
+    }
+  }
+  &--disabled {
+    color: white;
+    background-color: #e5e5e5;
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:active {
+      color: white;
+      background-color: #e5e5e5;
+    }
+  }
+  // состояние в прогрессе
+  &--progress {
+    animation: progress 1.5s infinite alternate;
+    @keyframes progress {
+      0% {
+        background-color: #5496bd;
+      }
+      100% {
+        background-color: #3e84ae;
       }
     }
   }
