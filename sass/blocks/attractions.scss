@@ -1,53 +1,80 @@
 .attractions {
+  padding-top: 6px;
   @media ($tablet-widths) {
     width: 100%;
+    margin-bottom: 22px;
     border-top: 1px solid #dbdbdb;
-    margin-bottom: 9px;
     @media ($desktop-widths) {
-      margin-bottom: 24px;
+      margin-bottom: 37px;
     }
   }
+
+
   &__wrapper {
-    width: 280px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 19px;
     padding-bottom: 12px;
     @media ($tablet-widths) {
-      width: 100%;
-      padding-top: 57px;
       flex-direction: row;
       flex-wrap: wrap;
+      // justify-content: space-between;
       width: 73%;
-      justify-content: space-between;
+      padding-top: 24px;
+      padding-left: 20px;
     }
     @media ($desktop-widths) {
-      width: 100%;
       justify-content: flex-start;
+      width: 100%;
+      padding-left: 0;
     }
   }
+
+
   &__legend {
-    position: relative;
-    top: 18px;
     @media ($tablet-widths) {
-      position: static;
-      width: 400px;
-      padding-left: 20px;
-      padding-right: 20px;
+      position: relative;
+      top: -32px;
+      background: white;
+      width: 360px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
   }
+
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &[id="diablo"]:checked ~ label[for="diablo"]::after {
+      display: block;
+    }
+    &[id="park"]:checked ~ label[for="park"]::after {
+      display: block;
+    }
+    &[id="mountain"]:checked ~ label[for="mountain"]::after {
+      display: block;
+    }
+    &[id="rock"]:checked ~ label[for="rock"]::after {
+      display: block;
+    }
+  }
+
+
   &__label {
     position: relative;
     margin-bottom: 54px;
     padding-left: 79px;
     text-align: left;
-
     @media ($tablet-widths) {
-      padding-left: 77px;
-      width: 27%;
+      width: 26%;
       margin-bottom: 62px;
-      margin-left: 10px;
+      margin-right: 60px;
+      // margin-left: 10px;
+      padding-left: 77px;
     }
     @media ($desktop-widths) {
       width: 13%;
@@ -57,17 +84,19 @@
       padding-left: 81px;
     }
 
+    // &:nth-child(even) {
+    //   @media ($tablet-widths) {
+    //     margin-right: 0;
+    //   }
+    // }
+
     &:last-child {
       margin-bottom: 29px;
       @media ($desktop-widths) {
-       margin-bottom: 20px;
+        margin-bottom: 20px;
       }
     }
-    // &:nth-child(4n) {
-    //   @media ($desktop-widths) {
-    //     margin-left: -26px;
-    //   }
-    // }
+
     &::before {
       display: block;
       position: absolute;
@@ -80,11 +109,39 @@
       cursor: pointer;
       border-radius: 5px;
     }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: 14px;
+      width: 24px;
+      height: 17px;
+      background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+    }
+
+    &:hover::before {
+      background-color: #e5e5e5;
+      transition: 0.3s;
+    }
+
+    &:active::before {
+      background-color: #d5d5d5;
+      transition: 0.3s;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+      transition: 0.3s;
+    }
+
     &[for="diablo"] {
       @media ($tablet-widths) {
         order: 1;
       }
     }
+
     &[for="park"] {
       @media ($tablet-widths) {
         order: 3;
@@ -93,35 +150,22 @@
         margin-right: 28px;
       }
     }
-    &[for="mountain"]{
+
+    &[for="mountain"] {
       @media ($tablet-widths) {
         order: 2;
-      }
-    }
-    &[for="rock"]{
-      @media ($tablet-widths) {
-        order: 4;
-      }
-      @media ($desktop-widths) {
         margin-right: 0;
       }
+      @media ($desktop-widths) {
+        margin-right: 54px;
+      }
     }
-  }
-  &__checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    &[id="diablo"]:checked ~ label[for="diablo"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
-    }
-    &[id="park"]:checked ~ label[for="park"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
-    }
-    &[id="mountain"]:checked ~ label[for="mountain"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
-    }
-    &[id="rock"]:checked ~ label[for="rock"]::before {
-      background: #f2f2f2 url("../img/icon-tick.svg") no-repeat 50% 50%
+
+    &[for="rock"] {
+      @media ($tablet-widths) {
+        order: 4;
+        margin-right: 0;
+      }
     }
   }
 }

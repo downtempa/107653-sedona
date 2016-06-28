@@ -1,26 +1,30 @@
 .social {
-
   &__item {
     vertical-align: top;
     display: inline-block;
     width: 46px;
     height: 48px;
     background-color: $blue-sky;
+
     &:not(:last-child) {
       margin-right: 3px;
     }
+
     & svg {
       height: 48px;
       fill: white;
     }
+
     &:hover {
       background-color: darken($blue-sky, 5%);
       transition: 0.3s;
     }
+
     &:active {
       background-color: darken($blue-sky, 10%);
       transition: 0.3s;
     }
+
     &:active svg {
       fill: rgba(255, 255, 255, 0.3);
       transition: 0.3s;

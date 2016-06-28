@@ -3,28 +3,32 @@
   padding-bottom: 20px;
   background-color: white;
   @media ($tablet-widths) {
-    width: 100%;
     display: flex;
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 43px;
   }
   @media ($desktop-widths) {
     padding-bottom: 63px;
   }
+
+
   &__wrapper {
     width: 280px;
     margin: 0 auto;
     @media ($tablet-widths) {
       display: flex;
-      margin: 0 auto;
-      width: 728px;
       justify-content: center;
+      width: 728px;
+      margin: 0 auto;
     }
     @media ($desktop-widths) {
-    justify-content: flex-start;
-    width: auto;
+      justify-content: flex-start;
+      width: auto;
     }
   }
+
+
   &__title {
     margin: 0;
     padding: 0;
@@ -43,6 +47,7 @@
       margin-bottom: 20px;
       font-size: 21px;
     }
+
     &--gift {
       margin-left: 13px;
       @media ($tablet-widths) {
@@ -50,6 +55,8 @@
       }
     }
   }
+
+
   &__description {
     margin: 0;
     padding: 0;
@@ -65,6 +72,8 @@
       margin-left: 0;
     }
   }
+
+
   &__item {
     display: flex;
     flex-wrap: wrap;
@@ -86,28 +95,32 @@
       padding-right: 56px;
       padding-left: 56px;
     }
+
     &--gift {
       @media ($tablet-widths) {
         order: 3;
         margin-right: 0;
       }
     }
+
     &--food {
       @media ($tablet-widths) {
         width: 21%;
         order: 2;
-
       }
       @media ($desktop-widths) {
         width: 33.33%;
       }
     }
   }
+
+
   &__picture {
     width: 40px;
     @media ($tablet-widths) {
       width: 76px;
     }
+
     &--gift {
       width: 31px;
       margin-left: 6px;
@@ -117,6 +130,7 @@
         margin-left: -4px;
       }
     }
+
     &--food {
       width: 39px;
       margin-top: 7px;

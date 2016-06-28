@@ -12,6 +12,21 @@
       @media ($desktop-widths) {
         max-width: 1200px;
       }
+
+
+      // механика открытия меню
+      .js & {
+        display: none;
+        @media ($tablet-widths) {
+          display: block;
+        }
+      }
+      .js &--visible {
+        display: block;
+      }
+      // ------------------------
+
+
       &__list {
         list-style: none;
         margin: 0;
@@ -21,7 +36,8 @@
           flex-wrap: wrap;
         }
       }
-      // обертка пункта меню, задаю бордеры, убираю в &__col
+
+
       &__item {
         border-top: 1px solid lighten($blue-sky, 10%);
         border-bottom: 1px solid darken($blue-sky, 20%);
@@ -30,11 +46,13 @@
           border-bottom: none;
           width: 20%;
         }
+
         &:nth-child(4n+2) {
           @media ($tablet-widths) {
             margin-right: 20%;
           }
         }
+
         &:hover {
           border-top: 1px solid darken($blue-sky, 5%);
           transition: 0.3s;
@@ -42,6 +60,7 @@
             border-top: none;
           }
         }
+
         &:active {
           border-top: 1px solid darken($blue-sky, 10%);
           transition: 0.3s;
@@ -50,6 +69,8 @@
           }
         }
       }
+
+
       // пункт меню
       &__link {
         display: block;
@@ -72,6 +93,7 @@
           line-height: 26px;
           color: black;
         }
+
         &--form {
           @media ($tablet-widths) {
             padding-left: 27px;
@@ -80,6 +102,7 @@
             padding-left: 22px;
           }
         }
+
         &:hover {
           background-color: darken($blue-sky, 5%);
           transition: 0.3s;
@@ -88,6 +111,7 @@
             color: $blue-sky;
           }
         }
+
         &:active {
           background-color: darken($blue-sky, 10%);
           color: rgba(255, 255, 255, 0.3);
@@ -98,6 +122,8 @@
           }
         }
       }
+
+
       // переключатель
       &__toggle {
         position: absolute;
