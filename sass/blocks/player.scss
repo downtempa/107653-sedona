@@ -9,7 +9,7 @@
   }
 
 
-  &__content {
+  .player__content {
     @media ($tablet-widths) {
       position: relative;
     }
@@ -20,7 +20,7 @@
   }
 
 
-  &__controls {
+  .player__controls {
     padding-right: 23px;
     padding-left: 23px;
     padding-top: 22px;
@@ -50,7 +50,7 @@
   }
 
 
-  &__item {
+  .player__item {
     display: block;
     text-decoration: none;
     @media ($tablet-widths) {
@@ -77,13 +77,6 @@
       }
     }
 
-    & svg {
-      fill: #5c6870;
-      @media ($tablet-widths) {
-        fill: white;
-      }
-    }
-
     &:hover svg {
       fill: #333;
       transition: 0.3s;
@@ -96,7 +89,15 @@
   }
 
 
-  &__progress-bar {
+  .player__item svg {
+      fill: #5c6870;
+      @media ($tablet-widths) {
+        fill: white;
+      }
+    }
+
+
+  .player__progress-bar {
     margin-bottom: 23px;
     @media ($tablet-widths) {
       margin-left: 43px;

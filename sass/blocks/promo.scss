@@ -1,5 +1,7 @@
 .promo {
-  &__benefit-row {
+
+
+  .promo__benefit-row {
     background-color: #eee;
     @media ($tablet-widths) {
       display: flex;
@@ -12,7 +14,7 @@
   }
 
 
-  &__search {
+  .promo__search {
     width: 280px;
     margin: 0 auto;
     @media ($tablet-widths) {

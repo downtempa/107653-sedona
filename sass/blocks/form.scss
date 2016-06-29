@@ -13,7 +13,7 @@
   }
 
 
-  &__footnote {
+  .form__footnote {
     display: none;
     @media ($tablet-widths) {
       display: inline-block;

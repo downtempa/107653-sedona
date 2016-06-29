@@ -15,8 +15,9 @@
   @media ($tablet-widths) {
     font-size: 21px;
   }
+}
 
-  & span {
+.legend span {
     @media ($tablet-widths) {
       display: none;
     }
@@ -24,4 +25,4 @@
       display: inline-block;
     }
   }
-}
+

@@ -30,7 +30,7 @@
     }
   }
 
-  &__picture img {
+  .post__picture img {
     @media ($desktop-widths) {
       vertical-align: bottom;
     }
@@ -44,7 +44,7 @@
   }
 
 
-  &__wrapper {
+  .post__wrapper {
     width: 280px;
     margin: 0 auto;
     @media ($tablet-widths) {
@@ -54,7 +54,7 @@
 
 
   // блок с описанием и авторством
-  &__footer {
+  .post__footer {
     // padding-top: 4px;
     @media ($tablet-widths) {
       display: flex;
@@ -72,7 +72,7 @@
   }
 
 
-  &__footer-wrapper {
+  .post__footer-wrapper {
     @media ($tablet-widths) {
       width: 70%;
       margin-right: 11px;
@@ -84,7 +84,7 @@
 
 
   // заголовок
-  &__title {
+  .post__title {
     margin-bottom: 0;
     font-family: $main-font;
     font-size: 14px;
@@ -106,7 +106,7 @@
 
 
   // автор
-  &__author {
+  .post__author {
     margin-top: 0;
     margin-bottom: 5px;
     font-family: $main-font;
@@ -126,7 +126,7 @@
 
 
   // thumbs up + количесво лайков
-  &__like {
+  .post__like {
     @media ($tablet-widths) {
       align-self: flex-end;
       margin-bottom: 14px;
@@ -144,7 +144,7 @@
 
 
   // количесво лайков
-  &__likes-sum {
+  .post__likes-sum {
     margin-left: 9px;
     font-family: $main-font;
     font-size: 14px;

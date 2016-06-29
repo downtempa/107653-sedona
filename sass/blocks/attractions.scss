@@ -10,7 +10,7 @@
   }
 
 
-  &__wrapper {
+  .attractions__wrapper {
     display: flex;
     flex-direction: column;
     width: 280px;
@@ -33,7 +33,7 @@
   }
 
 
-  &__legend {
+  .attractions__legend {
     @media ($tablet-widths) {
       position: relative;
       top: -32px;
@@ -45,26 +45,28 @@
   }
 
 
-  &__checkbox {
+  .attractions__checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
-    &[id="diablo"]:checked ~ label[for="diablo"]::after {
-      display: block;
-    }
-    &[id="park"]:checked ~ label[for="park"]::after {
-      display: block;
-    }
-    &[id="mountain"]:checked ~ label[for="mountain"]::after {
-      display: block;
-    }
-    &[id="rock"]:checked ~ label[for="rock"]::after {
-      display: block;
-    }
   }
 
+  .attractions__checkbox[id="diablo"]:checked ~ label[for="diablo"]::after {
+      display: block;
+    }
+  .attractions__checkbox[id="park"]:checked ~ label[for="park"]::after {
+      display: block;
+    }
+  .attractions__checkbox[id="mountain"]:checked ~ label[for="mountain"]::after {
+      display: block;
+    }
+  .attractions__checkbox[id="rock"]:checked ~ label[for="rock"]::after {
+      display: block;
+    }
 
-  &__label {
+
+
+  .attractions__label {
     position: relative;
     margin-bottom: 54px;
     padding-left: 79px;
@@ -84,11 +86,6 @@
       padding-left: 81px;
     }
 
-    // &:nth-child(even) {
-    //   @media ($tablet-widths) {
-    //     margin-right: 0;
-    //   }
-    // }
 
     &:last-child {
       margin-bottom: 29px;
@@ -135,14 +132,15 @@
       opacity: 0.3;
       transition: 0.3s;
     }
+  }
 
-    &[for="diablo"] {
+  .attractions__label[for="diablo"] {
       @media ($tablet-widths) {
         order: 1;
       }
     }
 
-    &[for="park"] {
+  .attractions__label[for="park"] {
       @media ($tablet-widths) {
         order: 3;
       }
@@ -151,7 +149,7 @@
       }
     }
 
-    &[for="mountain"] {
+  .attractions__label[for="mountain"] {
       @media ($tablet-widths) {
         order: 2;
         margin-right: 0;
@@ -161,11 +159,11 @@
       }
     }
 
-    &[for="rock"] {
+  .attractions__label[for="rock"] {
       @media ($tablet-widths) {
         order: 4;
         margin-right: 0;
       }
     }
-  }
+
 }

@@ -12,7 +12,7 @@
   }
 
 
-  &__logo {
+  .main-footer__logo {
     font-family: $main-font;
     font-size: 21px;
     line-height: 26px;
@@ -27,7 +27,7 @@
   }
 
 
-  &__social {
+  .main-footer__social {
     margin-top: 36px;
     @media ($tablet-widths) {
       width: 33.33%;
@@ -36,7 +36,7 @@
   }
 
 
-  &__copyright {
+  .main-footer__copyright {
     width: 280px;
     margin-right: auto;
     margin-left: auto;

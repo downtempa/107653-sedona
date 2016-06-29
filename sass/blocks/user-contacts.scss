@@ -12,7 +12,7 @@
   }
 
 
-  &__wrapper {
+  .user-contacts__wrapper {
     width: 280px;
     margin: 0 auto;
     display: flex;
@@ -31,7 +31,7 @@
   }
 
 
-  &__input-container {
+  .user-contacts__input-container {
     box-sizing: border-box;
     text-align: left;
     margin-bottom: 42px;
@@ -56,7 +56,7 @@
   }
 
 
-  &__legend {
+  .user-contacts__legend {
     @media ($tablet-widths) {
       position: relative;
       top: -19px;
@@ -68,7 +68,7 @@
   }
 
 
-  &__label {
+  .user-contacts__label {
     position: relative;
     text-align: left;
     margin-left: 22px;
@@ -106,16 +106,17 @@
         left: 106px;
       }
     }
+  }
 
-    & span {
+
+  .user-contacts__label span {
       @media ($desktop-widths) {
         display: none;
       }
     }
-  }
 
 
-  &__input {
+  .user-contacts__input {
     box-sizing: border-box;
     margin-top: 7px;
     width: 100%;

@@ -8,7 +8,7 @@
   }
 
 
-  &__wrapper {
+  .user-exp__wrapper {
     width: 280px;
     margin: 0 auto;
     display: flex;
@@ -25,7 +25,7 @@
   }
 
 
-  &__legend {
+  .user-exp__legend {
     @media ($tablet-widths) {
      margin-top: 0;
      padding-left:0;
@@ -37,7 +37,7 @@
   }
 
 
-  &__label {
+  .user-exp__label {
     position: relative;
     margin-bottom: 43px;
     padding-left: 79px;
@@ -96,21 +96,22 @@
   }
 
 
-  &__radio {
+  .user-exp__radio {
     position: absolute;
     z-index: -1;
     opacity: 0;
+  }
 
-    &[id="positive-exp"]:checked ~ label[for="positive-exp"]::after {
-      display: block
-    }
 
-    &[id="negative-exp"]:checked ~ label[for="negative-exp"]::after {
-      display: block
-    }
+  .user-exp__radio[id="positive-exp"]:checked ~ label[for="positive-exp"]::after {
+    display: block
+  }
 
-    &[id="no-comments"]:checked ~ label[for="no-comments"]::after {
-      display: block
-    }
+  .user-exp__radio[id="negative-exp"]:checked ~ label[for="negative-exp"]::after {
+    display: block
+  }
+
+  .user-exp__radio[id="no-comments"]:checked ~ label[for="no-comments"]::after {
+    display: block
   }
 }

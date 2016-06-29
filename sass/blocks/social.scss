@@ -1,5 +1,6 @@
 .social {
-  &__item {
+
+  .social__item {
     vertical-align: top;
     display: inline-block;
     width: 46px;
@@ -8,11 +9,6 @@
 
     &:not(:last-child) {
       margin-right: 3px;
-    }
-
-    & svg {
-      height: 48px;
-      fill: white;
     }
 
     &:hover {
@@ -29,5 +25,11 @@
       fill: rgba(255, 255, 255, 0.3);
       transition: 0.3s;
     }
+  }
+
+
+  .social__item svg {
+    height: 48px;
+    fill: white;
   }
 }

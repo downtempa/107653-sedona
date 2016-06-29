@@ -13,7 +13,7 @@
   }
 
 
-  &__wrapper {
+  .advice__wrapper {
     width: 280px;
     margin: 0 auto;
     @media ($tablet-widths) {
@@ -29,7 +29,7 @@
   }
 
 
-  &__title {
+  .advice__title {
     width: 70%;
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@
   }
 
 
-  &__description {
+  .advice__description {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -77,7 +77,7 @@
   }
 
 
-  &__item {
+  .advice__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -118,7 +118,7 @@
   }
 
 
-  &__picture {
+  .advice__picture {
     width: 40px;
     @media ($tablet-widths) {
       width: 76px;

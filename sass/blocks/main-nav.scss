@@ -1,144 +1,144 @@
-    .main-nav {
-      position: relative;
-      margin: 0 auto;
+.main-nav {
+  position: relative;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+  }
+  @media ($desktop-widths) {
+    max-width: 1200px;
+  }
+
+
+  .main-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @media ($tablet-widths) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+
+  .main-nav__item {
+    border-top: 1px solid lighten($blue-sky, 10%);
+    border-bottom: 1px solid darken($blue-sky, 20%);
+    @media ($tablet-widths) {
+      border-top: none;
+      border-bottom: none;
+      width: 20%;
+    }
+
+    &:nth-child(4n+2) {
       @media ($tablet-widths) {
-        position: absolute;
-        z-index: 5;
-        width: 100%;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        background-color: white;
-      }
-      @media ($desktop-widths) {
-        max-width: 1200px;
-      }
-
-
-      // механика открытия меню
-      .js & {
-        display: none;
-        @media ($tablet-widths) {
-          display: block;
-        }
-      }
-      .js &--visible {
-        display: block;
-      }
-      // ------------------------
-
-
-      &__list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        @media ($tablet-widths) {
-          display: flex;
-          flex-wrap: wrap;
-        }
-      }
-
-
-      &__item {
-        border-top: 1px solid lighten($blue-sky, 10%);
-        border-bottom: 1px solid darken($blue-sky, 20%);
-        @media ($tablet-widths) {
-          border-top: none;
-          border-bottom: none;
-          width: 20%;
-        }
-
-        &:nth-child(4n+2) {
-          @media ($tablet-widths) {
-            margin-right: 20%;
-          }
-        }
-
-        &:hover {
-          border-top: 1px solid darken($blue-sky, 5%);
-          transition: 0.3s;
-          @media ($tablet-widths) {
-            border-top: none;
-          }
-        }
-
-        &:active {
-          border-top: 1px solid darken($blue-sky, 10%);
-          transition: 0.3s;
-          @media ($tablet-widths) {
-            border-top: none;
-          }
-        }
-      }
-
-
-      // пункт меню
-      &__link {
-        display: block;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        padding-right: 20px;
-        padding-left: 20px;
-        font-family: $main-font;
-        font-weight: 900;
-        font-size: 18px;
-        line-height: 40px;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        background-color: $blue-sky;
-        @media ($tablet-widths) {
-          background-color: transparent;
-          font-size: 14px;
-          line-height: 26px;
-          color: black;
-        }
-
-        &--form {
-          @media ($tablet-widths) {
-            padding-left: 27px;
-          }
-          @media ($desktop-widths) {
-            padding-left: 22px;
-          }
-        }
-
-        &:hover {
-          background-color: darken($blue-sky, 5%);
-          transition: 0.3s;
-          @media ($tablet-widths) {
-            background-color: transparent;
-            color: $blue-sky;
-          }
-        }
-
-        &:active {
-          background-color: darken($blue-sky, 10%);
-          color: rgba(255, 255, 255, 0.3);
-          transition: 0.3s;
-          @media ($tablet-widths) {
-            background-color: transparent;
-            color: rgba(0, 0, 0, 0.3);
-          }
-        }
-      }
-
-
-      // переключатель
-      &__toggle {
-        position: absolute;
-        top: 16px;
-        right: 6%;
-        display: block;
-        width: 23px;
-        height: 23px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-indent: 100%;
-        outline: none;
-        background: url("../../img/icon-cross.svg") no-repeat center center;
-        @media ($tablet-widths) {
-          display: none;
-        }
+        margin-right: 20%;
       }
     }
+
+    &:hover {
+      border-top: 1px solid darken($blue-sky, 5%);
+      transition: 0.3s;
+      @media ($tablet-widths) {
+        border-top: none;
+      }
+    }
+
+    &:active {
+      border-top: 1px solid darken($blue-sky, 10%);
+      transition: 0.3s;
+      @media ($tablet-widths) {
+        border-top: none;
+      }
+    }
+  }
+  // пункт меню
+
+
+  .main-nav__link {
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: $main-font;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: $blue-sky;
+    @media ($tablet-widths) {
+      background-color: transparent;
+      font-size: 14px;
+      line-height: 26px;
+      color: black;
+    }
+
+    &--form {
+      @media ($tablet-widths) {
+        padding-left: 27px;
+      }
+      @media ($desktop-widths) {
+        padding-left: 22px;
+      }
+    }
+
+    &:hover {
+      background-color: darken($blue-sky, 5%);
+      transition: 0.3s;
+      @media ($tablet-widths) {
+        background-color: transparent;
+        color: $blue-sky;
+      }
+    }
+
+    &:active {
+      background-color: darken($blue-sky, 10%);
+      color: rgba(255, 255, 255, 0.3);
+      transition: 0.3s;
+      @media ($tablet-widths) {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  // переключатель
+  .main-nav__toggle {
+    position: absolute;
+    top: 16px;
+    right: 6%;
+    display: block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    outline: none;
+    background: url("../../img/icon-cross.svg") no-repeat center center;
+    @media ($tablet-widths) {
+      display: none;
+    }
+  }
+}
+
+// механика открытия меню
+.js .main-nav {
+  display: none;
+  @media ($tablet-widths) {
+    display: block;
+  }
+}
+
+.js .main-nav--visible {
+  display: block;
+}
+
+// ------------------------
+

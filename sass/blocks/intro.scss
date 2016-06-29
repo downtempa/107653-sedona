@@ -87,7 +87,7 @@
 
 
   // заголовок
-  &__title {
+  .intro__title {
     max-width: 445px;
     margin: 0 auto;
     padding-right: 8%;
@@ -126,7 +126,7 @@
 
 
   // текстовая часть
-  &__description {
+  .intro__description {
     margin-top: 27px;
     padding-right: 8%;
     padding-left: 8%;
@@ -188,7 +188,7 @@
 
 
   // кнопка поиска, появляется = блок интро в нижней части страницы
-  &__search-btn {
+  .intro__search-btn {
     margin-top: 22px;
     @media ($tablet-widths) {
       margin-top: 29px;
