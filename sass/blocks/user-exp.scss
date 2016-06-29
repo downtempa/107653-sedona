@@ -3,7 +3,7 @@
   @media ($tablet-widths) {
     width: 50%;
     order: -1;
-    box-shadow: 1px 0 0 0 #dbdbdb;
+    box-shadow: 0.5px 0 0 0 #dbdbdb;
     text-align: left;
   }
 
@@ -28,6 +28,7 @@
   &__legend {
     @media ($tablet-widths) {
      margin-top: 0;
+     padding-left:0;
     }
     @media ($desktop-widths) {
       top: 6px;
