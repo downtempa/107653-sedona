@@ -1,4 +1,5 @@
 .range {
+  padding: 0;
   background-color: transparent;
   position: relative;
   width: 100%;
@@ -37,6 +38,9 @@
     // border-width: 3px 0;
     border-color: transparent;
     background: rgba(255, 255, 255, 0.2);
+
+
+
     animate: 0.2s;
   }
 
@@ -73,13 +77,14 @@
     // border: 2px solid black;
     border-radius: 50px;
     background: white;
+    outline: none;
   }
-  // &::-ms-fill-lower {
-  //   background: red;
-  // }
-  // &::-ms-fill-upper {
-  //   background: red;
-  // }
+  &::-ms-fill-lower {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  &::-ms-fill-upper {
+    background: rgba(255, 255, 255, 0.2);
+  }
   // &:focus::-ms-fill-lower {
   //   background: #3071a9;
   // }
